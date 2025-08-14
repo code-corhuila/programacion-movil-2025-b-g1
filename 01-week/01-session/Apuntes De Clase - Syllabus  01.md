@@ -46,94 +46,21 @@ Proyecto: 20%
 Autoevaluación: 5%
 
 Distribuciones temáticas y de actividades
-
-  ---------- ------------------ -------------------- ----------- ----------------- -----------
-  **No. de   **Tema**           **Actividad con      **Horas**   **Actividad       **Horas**
-  sesión**                      acompañamiento**                 autónoma**        
-
-  1          Fundamentos y      Presentación del     3           Foro: casos de    6
-             planificación de   curso y tecnologías              éxito en          
-             proyectos móviles  móviles                          desarrollo de     
-                                                                 apps móviles      
-
-  2          Metodologías de    Exposición de        3           Análisis y        6
-             desarrollo ágil    metodologías ágiles              definición del    
-                                aplicadas a                      proyecto de       
-                                proyectos móviles                aplicación móvil  
-
-  3          Requerimientos y   Explicación sobre    3           Taller:           6
-             casos de uso       levantamiento de                 documentación de  
-                                requerimientos y                 requerimientos    
-                                casos de uso                     del proyecto      
-
-  4          Diseño de base de  Clase práctica:      3           Quiz: conceptos   6
-             datos y mockups    modelado y                       clave de diseño   
-                                prototipado con                  de BD y           
-                                herramientas                     prototipado       
-                                digitales                                          
-
-  5          Evaluación Corte 1 Evaluación           3           Resolución de     6
-                                teórica-práctica del             preguntas tipo    
-                                primer corte                     Saber PRO         
-
-  6          Herramientas de    Exposición sobre     3           Foro:             6
-             desarrollo móvil   entornos de                      experiencias      
-                                desarrollo Android               iniciales         
-                                Studio y Xcode                   configurando      
-                                                                 entornos móviles  
-
-  7          Lenguajes de       Clase introductoria  3           Desarrollo        6
-             programación       sobre Kotlin y Swift             temático:         
-             móviles                                             implementación    
-                                                                 básica de         
-                                                                 pantallas         
-
-  8          Backend básico     Presentación de      3           Taller: creación  6
-             para aplicaciones  Node.js y Express                de APIs simples   
-             móviles            para backend                     para usuarios     
-                                sencillo                                           
-
-  9          Frameworks móviles Comparativa entre    3           Quiz:             6
-             híbridos           Ionic, Flutter y                 características   
-                                React Native                     de desarrollo     
-                                                                 híbrido           
-
-  10         Evaluación Corte 2 Evaluación           3           Resolución de     6
-                                teórica-práctica del             preguntas tipo    
-                                segundo corte                    Saber PRO         
-
-  11         UX/UI en pantallas Clase sobre diseño   3           Foro: mejores     6
-             avanzadas          profesional de                   prácticas de      
-                                interfaces móviles               experiencia de    
-                                                                 usuario en apps   
-                                                                 móviles           
-
-  12         Plugins y          Explicación de       3           Desarrollo        6
-             componentes        plugins para cámara,             temático:         
-             avanzados          GPS y                            integración de    
-                                funcionalidades                  plugins en el     
-                                extendidas                       proyecto          
-
-  13         Backend final y    Demostración de      3           Taller: conexión  6
-             conectividad       integración                      y pruebas del     
-                                backend-móvil                    backend con la    
-                                completa                         aplicación        
-
-  14         Optimización y     Clase sobre pruebas, 3           Quiz:             6
-             testing            rendimiento y                    herramientas y    
-                                estrategia de                    conceptos de      
-                                testing                          testing en apps   
-                                                                 móviles           
-
-  15         Interfaces         Presentación de      3           Sustentación del  6
-             avanzadas de       principios de diseño             proyecto con      
-             usuario            de interfaces                    enfoque en        
-                                profesionales                    interfaz y        
-                                                                 funcionalidad     
-
-  16         Cierre y           Retroalimentación,   3           Preparación final 6
-             evaluación final   presentación y                   de la             
-                                cierre de                        presentación y    
-                                actividades                      entrega del       
-                                                                 portafolio        
-  ---------- ------------------ -------------------- ----------- ----------------- -----------
+| No. | Tema | Actividad con acompañamiento (horas) | Actividad autónoma (horas) |
+|-----|------|--------------------------------------|----------------------------|
+| 1 | Fundamentos y planificación de proyectos móviles | Presentación del curso y tecnologías móviles (3h) | Foro: casos de éxito en desarrollo de apps móviles (6h) |
+| 2 | Metodologías de desarrollo ágil | Exposición de metodologías ágiles aplicadas a proyectos móviles (3h) | Análisis y definición del proyecto de aplicación móvil (6h) |
+| 3 | Requerimientos y casos de uso | Explicación sobre levantamiento de requerimientos y casos de uso (3h) | Taller: documentación de requerimientos del proyecto (6h) |
+| 4 | Diseño de base de datos y prototipado | Clase práctica: modelado y prototipado con herramientas digitales (3h) | Quiz: conceptos clave de diseño de BD y prototipado (6h) |
+| 5 | Evaluación Corte 1 | Evaluación teórica-práctica del primer corte (3h) | Resolución de preguntas tipo Saber PRO (6h) |
+| 6 | Herramientas de desarrollo móvil | Exposición sobre entornos de desarrollo Android Studio y Xcode (3h) | Foro: experiencias iniciales configurando entornos móviles (6h) |
+| 7 | Lenguajes de programación móviles | Clase introductoria sobre Kotlin y Swift (3h) | Desarrollo temático: implementación básica de pantallas (6h) |
+| 8 | Backend básico para aplicaciones móviles | Presentación de Node.js y Express para backend sencillo (3h) | Taller: creación de APIs simples para usuarios (6h) |
+| 9 | Frameworks móviles híbridos | Comparativa entre Ionic, Flutter y React Native (3h) | Quiz: características de desarrollo híbrido (6h) |
+| 10 | Evaluación Corte 2 | Evaluación teórica-práctica del segundo corte (3h) | Resolución de preguntas tipo Saber PRO (6h) |
+| 11 | UX/UI en pantallas avanzadas | Clase sobre diseño profesional de interfaces móviles (3h) | Foro: mejores prácticas de experiencia de usuario en apps móviles (6h) |
+| 12 | Plugins y componentes avanzados | Explicación de plugins para cámara, GPS y funcionalidades extendidas (3h) | Desarrollo temático: integración de plugins en el proyecto (6h) |
+| 13 | Backend final y conectividad | Demostración de integración backend-móvil completa (3h) | Taller: conexión y pruebas del backend con la aplicación (6h) |
+| 14 | Optimización y testing | Clase sobre pruebas, rendimiento y estrategia de testing (3h) | Quiz: herramientas y conceptos de testing en apps móviles (6h) |
+| 15 | Interfaces avanzadas de usuario | Presentación de principios de diseño de interfaces profesionales (3h) | Sustentación del proyecto con enfoque en interfaz y funcionalidad (6h) |
+| 16 | Cierre y evaluación final | Retroalimentación, presentación y cierre de actividades (3h) | Preparación final de la presentación y entrega del portafolio (6h) |
