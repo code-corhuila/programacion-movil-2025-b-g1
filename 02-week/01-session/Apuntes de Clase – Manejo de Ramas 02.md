@@ -42,21 +42,21 @@ Todos los cambios de las semanas/sesiones van quedando en el historial de la ram
 ## También aprendimos algunos comandos de GitHub
 
 ejemplo:
-Ver las ramas que tengo locales:
+-Ver las ramas que tengo locales
 git branch
-La rama actual aparece con *.
+-La rama actual aparece con *.
 
-Para cambiar de rama:
+-Para cambiar de rama
 git switch y el nombre de la rama
 
-Crear una nueva rama:
+-Crear una nueva rama
 git branch y el nombre de la rama
 
-Para crear y cambiarse de una vez a la nueva rama directamente bajando también los archivos que habían en esa rama a mi carpeta local
+-Para crear y cambiarse de una vez a la nueva rama directamente bajando también los archivos que habían en esa rama a mi carpeta local
 git switch -c y el nombre de la rama
 
-Para subir algo a GitHub
-git push origin y el nombre de la rama cabe aclarar que para subir algo en esa rama engo que estar primero seguro de que estoy posicionado en esa rama
+-Para subir algo a GitHub
+git push origin y el nombre de la rama cabe aclarar que para subir algo en esa rama tengo que estar primero seguro de que estoy posicionado en esa rama
 
 ## El link del github donde toca hacer el fork
 https://github.com/code-corhuila/programacion-movil-2025-b-g1.git
