@@ -68,21 +68,23 @@ stop
 
 ![Logo App-Nexo](Diagrama_UML_de_Nexo.png)
 
+
 ## En el trello se colocaron estas 5 tareas 
 
-# Identificación del problema:
+
+## Identificación del problema:
 Tarea: Redactar documento de diagnóstico que describa el problema principal que la app busca resolver (falta de visibilidad para emprendedores, dificultad de contacto entre compradores y vendedores, etc.).
 
-# Análisis de mercado.
+## Análisis de mercado.
 Tarea: Investigar apps similares, identificar necesidades del público objetivo y analizar tendencias en comercio digital en la universidad pero también a el mundo.
 
-# Selección de plataforma y tipo de app.
+## Selección de plataforma y tipo de app.
 Tarea: Evaluar opciones tecnológicas (web, móvil nativa, híbrida) y seleccionar la más adecuada según el público, presupuesto y escalabilidad.
 
-# Creación de wireframes iniciales.
+## Creación de wireframes iniciales.
 Tarea: Diseñar la estructura visual básica de la app (pantallas de registro, perfil, catálogo, publicación, etc.) usando herramientas como Figma.
 
-# Reunión de validación.
+## Reunión de validación.
 Tarea: Organizar reunión con stakeholders (usuarios, docentes, equipo técnico) para presentar avances y recibir retroalimentación.
 
 
