@@ -78,5 +78,6 @@ Tarea: Diseñar la estructura visual básica de la app (pantallas de inicio, reg
 Tarea: Organizar reunión con stakeholders (usuarios, docentes, equipo técnico) para presentar avances y recibir retroalimentación.
 
 # Link de vista del trello
+https://trello.com/invite/b/68b213e295cae550e6b1d489/ATTI9a8cb338de83ddc71e2e4e1bfb90b90e41088CB6/nexo
 
 
