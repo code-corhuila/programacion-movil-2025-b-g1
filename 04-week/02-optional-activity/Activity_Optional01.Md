@@ -7,7 +7,7 @@ En la universidad, muchos estudiantes buscan formas de generar ingresos para cub
 
 ## Justificación De La Aplicación Móvil:
 
-Una aplicación móvil pensada para estudiantes universitarios de corhuila sería una solución práctica y accesible, ya que serviría como un mercado digital interno de la comunidad estudiantil. En ella, los estudiantes podrían registrar sus productos o servicios, publicar fotos, precios y promociones, y los demás compañeros tendrían un canal para contactar directamente y pagar el producto fisicamente. La app va ha a tener categorías (alimentos, accesorios, servicios o mas), sistema de reseñas. Además de impulsar el emprendimiento estudiantil, fomentaría la economía colaborativa dentro de la universidad.
+Una aplicación móvil pensada para estudiantes universitarios de corhuila sería una solución práctica y accesible, ya que serviría como un mercado digital interno de la comunidad estudiantil. En ella, los estudiantes podrían registrar sus productos o servicios, publicar fotos, precios y promociones, y los demás compañeros tendrían un canal para contactar directamente y pagar el producto fisicamente. La app va ha tener categorías (alimentos, accesorios, servicios o mas), sistema de reseñas. Además de impulsar el emprendimiento estudiantil, fomentaría la economía colaborativa dentro de la universidad.
 
 ## Publico Objetivo:
 
