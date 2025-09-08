@@ -270,6 +270,7 @@ Escenario: Suspender o eliminar usuario
 | Cuando   | selecciono un usuario infractor y lo suspendemos/eliminamos |
 | Entonces | el usuario pierde acceso a la app                |                                      |
 
+---
 
 **Fecha:** 8 de septiembre del 2025
 

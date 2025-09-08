@@ -204,13 +204,13 @@ Creamos un tipo de dato ENUM llamado user_role y creamos la tabla usuarios.
 CREATE TYPE user_role AS ENUM ('emprendedor', 'comprador', 'admin');
 
 CREATE TABLE users (
-  id SERIAL PRIMARY KEY,
-  email VARCHAR(100) UNIQUE NOT NULL,
-  password VARCHAR(255) NOT NULL,
-  role user_role NOT NULL DEFAULT 'comprador',
-  phone VARCHAR(20),
-  username VARCHAR(50),
-  created_at TIMESTAMP DEFAULT now()
+id SERIAL PRIMARY KEY,
+email VARCHAR(100) UNIQUE NOT NULL,
+password VARCHAR(255) NOT NULL,
+role user_role NOT NULL DEFAULT 'comprador',
+phone VARCHAR(20),
+username VARCHAR(50),
+created_at TIMESTAMP DEFAULT now()
 );
 
 ---
@@ -556,6 +556,8 @@ CREATE TABLE users (
 ### 1.4 Apéndices (opcional)
 https://www.figma.com/design/nbyajVF3jNafcHBNPk0RiM/Sin-t%C3%ADtulo?node-id=0-1&t=6oLvp91VK13hoVMe-1
 
+
+---
 
 **Fecha:** 8 de septiembre del 2025 
 

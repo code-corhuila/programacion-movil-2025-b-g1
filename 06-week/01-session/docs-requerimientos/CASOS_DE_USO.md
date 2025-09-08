@@ -213,6 +213,7 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 #### UC-10: Gestionar reseñas
 ![Diagrama UC-10](Imagenes/UC-10.png)
 
+---
 
 **Fecha:** 8 de septiembre del 2025
 

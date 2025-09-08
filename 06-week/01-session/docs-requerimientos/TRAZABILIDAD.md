@@ -21,6 +21,7 @@
 | RF-17: Ver reportes de publicaciones (admin) | HU-16 | UC-09 Moderar usuarios y publicaciones | TC-45 Visualización de reportes en panel de administración.<br>TC-46 Mensaje “No se han recibido reportes” si lista vacía.<br>Criterio: El panel siempre muestra lista o mensaje. |
 | RF-18: Suspender cuenta empresarios que incumplan normas | HU-17 | UC-09 Moderar usuarios y publicaciones | TC-47 Suspensión exitosa de empresa con confirmación.<br>TC-48 Error si intenta suspender elemento inexistente.<br>Criterio: Solo elementos válidos pueden ser suspendidos por el administrador. |
 
+---
 
 **Fecha:** 8 de septiembre del 2025
 
