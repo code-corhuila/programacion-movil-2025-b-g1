@@ -28,3 +28,11 @@
 
 
 Mockups: https://www.figma.com/design/nbyajVF3jNafcHBNPk0RiM/Sin-t%C3%ADtulo?node-id=0-1&t=6oLvp91VK13hoVMe-1
+
+---
+
+**Fecha:** 8 de septiembre del 2025
+
+**Versión:** #1   
+
+**Responsable:** Harold Camilo Barrera Giraldo y Danay Mariana Pereira Ospina
