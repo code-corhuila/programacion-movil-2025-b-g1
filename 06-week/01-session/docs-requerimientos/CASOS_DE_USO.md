@@ -22,6 +22,8 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **RF/RNF relacionados**    | • RF1, RF2, RF3<br>• RNF1<br>• RS1, RS3 |
 
 
+
+
 | Campo                     | UC-02: Iniciar sesión |
 |----------------------------|----------------------|
 | **ID**                     | UC-02 |
@@ -35,6 +37,8 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **Extensiones**            | • Credenciales inválidas → mostrar error.<br>• 5 intentos fallidos → bloqueo temporal. |
 | **Reglas de negocio**      | • Solo usuarios registrados pueden iniciar sesión. |
 | **RF/RNF relacionados**    | • RF5<br>• RNF1<br>• RS2, RS3 |
+
+
 
 
 | Campo                     | UC-03: Crear empresa |
@@ -52,6 +56,8 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **RF/RNF relacionados**    | • RF6, RF10<br>• RNF1<br>• RS4 |
 
 
+
+
 | Campo                     | UC-04: Publicar producto o servicio |
 |----------------------------|--------------------|
 | **ID**                     | UC-04 |
@@ -65,6 +71,8 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **Extensiones**            | • Imagen no válida → mostrar error.<br>• Precio negativo → mostrar mensaje de validación. |
 | **Reglas de negocio**      | • El producto debe estar vinculado a una empresa existente.<br>• La imagen debe pesar ≤ 5MB. |
 | **RF/RNF relacionados**    | • RF8, RF10<br>• RNF3<br>• RS4 |
+
+
 
 
 | Campo                     | UC-05: Ver catálogo de empresa |
@@ -82,6 +90,8 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **RF/RNF relacionados**    | • RF11, RF12, RF13<br>• RNF2 |
 
 
+
+
 | Campo                     | UC-06: Contactar emprendedor |
 |----------------------------|-----------------------------|
 | **ID**                     | UC-06 |
@@ -95,6 +105,8 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **Extensiones**            | • Número no disponible → mostrar error.<br>• WhatsApp no instalado → mostrar mensaje alternativo. |
 | **Reglas de negocio**      | Solo se permite contactar si tiene productos el emprendedor. |
 | **RF/RNF relacionados**    | • RF14<br>• RS3 |
+
+
 
 
 | Campo                     | UC-07: Crear promoción |
@@ -112,6 +124,8 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **RF/RNF relacionados**    | • RF16<br>• RNF1<br>• RS4 |
 
 
+
+
 | Campo                     | UC-08: Gestionar categorías |
 |----------------------------|----------------------------|
 | **ID**                     | UC-08 |
@@ -127,6 +141,8 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **RF/RNF relacionados**    | • RF10, RF18<br>• RS4 |
 
 
+
+
 | Campo                     | UC-09: Moderar usuarios y publicaciones |
 |----------------------------|----------------------------------------|
 | **ID**                     | UC-09 |
@@ -140,6 +156,8 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **Extensiones**            | • Acción no permitida → mostrar error.<br>• Empresa ya suspendida → mostrar advertencia. |
 | **Reglas de negocio**      | • Solo el administrador puede realizar estas acciones. |
 | **RF/RNF relacionados**    | • RF17, RF18<br>• RS4 |
+
+
 
 | Campo                     | UC-10: Gestionar reseñas |
 |----------------------------|--------------------------|
@@ -196,6 +214,8 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 ![Diagrama UC-10](Imagenes/UC-10.png)
 
 
-Fecha: 8 de septiembre del 2025. 
-Versión: ??   
-Responsable: Harold Camilo Barrera Giraldo y Danay Mariana Pereira Ospina.
+**Fecha:** 8 de septiembre del 2025
+
+**Versión:** ??   
+
+**Responsable:** Harold Camilo Barrera Giraldo y Danay Mariana Pereira Ospina

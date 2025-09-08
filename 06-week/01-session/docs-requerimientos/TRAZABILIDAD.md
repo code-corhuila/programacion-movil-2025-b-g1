@@ -22,6 +22,8 @@
 | RF-18: Suspender cuenta empresarios que incumplan normas | HU-17 | UC-09 Moderar usuarios y publicaciones | TC-47 Suspensión exitosa de empresa con confirmación.<br>TC-48 Error si intenta suspender elemento inexistente.<br>Criterio: Solo elementos válidos pueden ser suspendidos por el administrador. |
 
 
-Fecha: 8 de septiembre del 2025. 
-Versión: ??   
-Responsable: Danay Mariana Pereira Ospina. 
+**Fecha:** 8 de septiembre del 2025
+
+**Versión:** ??   
+
+**Responsable:** Danay Mariana Pereira Ospina
