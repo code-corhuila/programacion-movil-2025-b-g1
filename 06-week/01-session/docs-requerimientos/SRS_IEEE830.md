@@ -281,7 +281,7 @@ created_at TIMESTAMP DEFAULT now()
 
 ### 1.3.4 Lógica de datos / base de datos — entidades y relaciones
 
-#### **Usuario**
+#### **_Usuario_**
 - Id_usuario (PK)
 - Correo (ÚNICO, NOT NULL)
 - Teléfono
@@ -299,7 +299,7 @@ created_at TIMESTAMP DEFAULT now()
 - 1:N con Reporte (como reportante)
 
 
-#### **Perfil**
+#### **_Perfil_**
 - Id_perfil (PK)
 - Usuario_Id (FK → Usuario.Id_usuario)
 - Foto_URL
@@ -311,7 +311,7 @@ created_at TIMESTAMP DEFAULT now()
 - 1:1 con Usuario
 
 
-#### **Empresa**
+#### **_Empresa_**
 - Id_empresa (PK)
 - Usuario_Id (FK → Usuario.Id_usuario, UNIQUE) ← asegura que un usuario no tenga más de una empresa.
 - Categoria_Id (FK → Categoría.Id_categoria)
@@ -328,7 +328,7 @@ created_at TIMESTAMP DEFAULT now()
 - 1:N con Producto
 
 
-#### **Producto**
+#### **_Producto_**
 - Id_producto (PK)
 - Empresa_Id (FK → Empresa.Id_empresa)
 - Título
@@ -347,7 +347,7 @@ created_at TIMESTAMP DEFAULT now()
 - 1:N con Promoción
 
 
-#### **Categoría**
+#### **_Categoría_**
 - Id_categoria (PK)
 - Nombre
 - Created_At
@@ -356,7 +356,7 @@ created_at TIMESTAMP DEFAULT now()
 - 1:N con Producto
 
 
-#### **Reseña**
+#### **_Reseña_**
 - Id_reseña (PK)
 - Usuario_Id (FK → Usuario.Id_usuario)
 - Producto_Id (FK → Producto.Id_producto)
@@ -368,7 +368,7 @@ created_at TIMESTAMP DEFAULT now()
 - N:1 con Producto
 
 
-#### **Reporte**
+#### **_Reporte_**
 - Id_reporte (PK)
 - Reportante_Id (FK → Usuario.Id_usuario)
 - Producto_Id (FK → Producto.Id_producto)
@@ -380,7 +380,7 @@ created_at TIMESTAMP DEFAULT now()
 - N:1 con Producto (producto reportado)
 
 
-#### **Promoción**
+#### **_Promoción_**
 - Id_promoción (PK)
 - Producto_Id (FK → Producto.Id_producto)
 - Descripción
@@ -511,7 +511,7 @@ created_at TIMESTAMP DEFAULT now()
 - La interfaz debe seguir las pautas de diseño de Material Design (Android) para garantizar consistencia visual.
 - Formularios y botones deben cumplir con accesibilidad básica (contraste de colores, tamaño mínimo de toque ≥ 44 px).
 
-
+---
 
 ### 1.3.6 Atributos del sistema (RNF) — seguridad, disponibilidad, mantenibilidad, portabilidad, accesibilidad
 - Seguridad: credenciales cifradas en base de datos, autenticación por correo institucional, control de roles (admin/emprendedor/comprador).
@@ -561,6 +561,6 @@ https://www.figma.com/design/nbyajVF3jNafcHBNPk0RiM/Sin-t%C3%ADtulo?node-id=0-1&
 
 **Fecha:** 8 de septiembre del 2025 
 
-**Versión:** ??  
+**Versión:** #1 
 
 **Responsable:** Harold Camilo Barrera Giraldo

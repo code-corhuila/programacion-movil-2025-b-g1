@@ -274,6 +274,6 @@ Escenario: Suspender o eliminar usuario
 
 **Fecha:** 8 de septiembre del 2025
 
-**Versión:** ??  
+**Versión:** #1 
 
 **Responsable:** Harold Camilo Barrera Giraldo

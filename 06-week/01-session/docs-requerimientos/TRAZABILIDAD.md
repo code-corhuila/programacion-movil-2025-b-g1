@@ -25,6 +25,6 @@
 
 **Fecha:** 8 de septiembre del 2025
 
-**Versión:** ??   
+**Versión:** #1   
 
 **Responsable:** Danay Mariana Pereira Ospina

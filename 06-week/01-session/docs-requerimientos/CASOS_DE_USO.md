@@ -21,7 +21,7 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **Reglas de negocio**      | • El correo debe contener dominio @corhuila.edu.co.<br>• Contraseña ≥ 8 caracteres. |
 | **RF/RNF relacionados**    | • RF1, RF2, RF3<br>• RNF1<br>• RS1, RS3 |
 
-
+---
 
 
 | Campo                     | UC-02: Iniciar sesión |
@@ -39,7 +39,7 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **RF/RNF relacionados**    | • RF5<br>• RNF1<br>• RS2, RS3 |
 
 
-
+---
 
 | Campo                     | UC-03: Crear empresa |
 |----------------------------|--------------------|
@@ -56,7 +56,7 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **RF/RNF relacionados**    | • RF6, RF10<br>• RNF1<br>• RS4 |
 
 
-
+---
 
 | Campo                     | UC-04: Publicar producto o servicio |
 |----------------------------|--------------------|
@@ -73,7 +73,7 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **RF/RNF relacionados**    | • RF8, RF10<br>• RNF3<br>• RS4 |
 
 
-
+---
 
 | Campo                     | UC-05: Ver catálogo de empresa |
 |----------------------------|--------------------|
@@ -90,7 +90,7 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **RF/RNF relacionados**    | • RF11, RF12, RF13<br>• RNF2 |
 
 
-
+---
 
 | Campo                     | UC-06: Contactar emprendedor |
 |----------------------------|-----------------------------|
@@ -106,8 +106,7 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **Reglas de negocio**      | Solo se permite contactar si tiene productos el emprendedor. |
 | **RF/RNF relacionados**    | • RF14<br>• RS3 |
 
-
-
+---
 
 | Campo                     | UC-07: Crear promoción |
 |----------------------------|-----------------------|
@@ -123,7 +122,7 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **Reglas de negocio**      | • La promoción debe estar ligada a un producto existente.<br>• Las fechas deben estar en formato válido. |
 | **RF/RNF relacionados**    | • RF16<br>• RNF1<br>• RS4 |
 
-
+---
 
 
 | Campo                     | UC-08: Gestionar categorías |
@@ -141,7 +140,7 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **RF/RNF relacionados**    | • RF10, RF18<br>• RS4 |
 
 
-
+---
 
 | Campo                     | UC-09: Moderar usuarios y publicaciones |
 |----------------------------|----------------------------------------|
@@ -157,7 +156,7 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 | **Reglas de negocio**      | • Solo el administrador puede realizar estas acciones. |
 | **RF/RNF relacionados**    | • RF17, RF18<br>• RS4 |
 
-
+---
 
 | Campo                     | UC-10: Gestionar reseñas |
 |----------------------------|--------------------------|
@@ -186,29 +185,47 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 #### UC-01: Registrar cuenta
 ![Diagrama UC-01](Imagenes/UC-01.png)
 
+---  
+
 #### UC-02: Iniciar sesión
 ![Diagrama UC-02](Imagenes/UC-02.png)
+
+--- 
 
 #### UC-03: Crear empresa
 ![Diagrama UC-03](Imagenes/UC-03.png)
 
+--- 
+
 #### UC-04: Publicar producto o servicio
 ![Diagrama UC-04](Imagenes/UC-04.png)
+
+--- 
 
 #### UC-05: Ver catálogo de empresa
 ![Diagrama UC-05](Imagenes/UC-05.png)
 
+--- 
+
 #### UC-06: Contactar emprendedor
 ![Diagrama UC-06](Imagenes/UC-06.png)
+
+--- 
 
 #### UC-07: Crear promoción
 ![Diagrama UC-07](Imagenes/UC-07.png)
 
+--- 
+
 #### UC-08: Gestionar categorías
 ![Diagrama UC-08](Imagenes/UC-08.png)
 
+--- 
+
 #### UC-09: Moderar usuarios y publicaciones
 ![Diagrama UC-09](Imagenes/UC-09.png)
+
+--- 
 
 #### UC-10: Gestionar reseñas
 ![Diagrama UC-10](Imagenes/UC-10.png)
@@ -217,6 +234,6 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 
 **Fecha:** 8 de septiembre del 2025
 
-**Versión:** ??   
+**Versión:** #1   
 
 **Responsable:** Harold Camilo Barrera Giraldo y Danay Mariana Pereira Ospina
