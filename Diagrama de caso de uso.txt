@@ -1,0 +1,18 @@
+@startuml
+actor Usuario
+
+rectangle "App HealthyHabits" {
+  usecase "UC-01: Registrar ejercicio" as UC01
+  usecase "UC-02: Configurar recordatorio de agua" as UC02
+  usecase "UC-03: Registrar sueño" as UC03
+  usecase "UC-04: Planificar estudio" as UC04
+  usecase "UC-05: Ver gráficas de progreso" as UC05
+}
+
+Usuario --> UC01
+Usuario --> UC02
+Usuario --> UC03
+Usuario --> UC04
+Usuario --> UC05
+@enduml
+```
