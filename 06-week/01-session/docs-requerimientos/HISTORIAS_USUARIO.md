@@ -23,7 +23,8 @@
 ## 2.2 Criterios de aceptación (Gherkin)
 
 ### HU01 – Registro de usuario (emprendedor o comprador)
-Funcionalidad: Registro de usuario
+Funcionalidad: Registro de usuario. 
+
 Escenario: Registro exitoso con correo institucional
 | Paso       | Acción                                                                 |
 |------------|------------------------------------------------------------------------|
@@ -46,7 +47,7 @@ Escenario: Activación de cuenta mediante token
 
 
 ### HU02 – Inicio de sesión
-Funcionalidad: Login
+Funcionalidad: Login. 
 Escenario: Inicio de sesión exitoso
 | Paso       | Acción                                           |
 |------------|--------------------------------------------------|
@@ -67,7 +68,7 @@ Escenario: Inicio de sesión con credenciales incorrectas
 
 
 ### HU03 – Recuperación de contraseña
-Funcionalidad: Recuperación de contraseña
+Funcionalidad: Recuperación de contraseña. 
 Escenario: Solicitar restablecimiento de contraseña
 | Paso       | Acción                                                                 |
 |------------|------------------------------------------------------------------------|
@@ -78,7 +79,7 @@ Escenario: Solicitar restablecimiento de contraseña
 
 
 ### HU04 – Edición de perfil (emprendedor)
-Funcionalidad: Editar perfil
+Funcionalidad: Editar perfil. 
 Escenario: Modificar información permitida
 | Paso       | Acción                                           |
 |------------|--------------------------------------------------|
@@ -90,7 +91,7 @@ Escenario: Modificar información permitida
 
 
 ### HU05 – Edición de perfil (comprador)
-Funcionalidad: Editar perfil básico
+Funcionalidad: Editar perfil básico. 
 Escenario: Modificar información permitida
 | Paso       | Acción                                 |
 |------------|----------------------------------------|
@@ -102,7 +103,7 @@ Escenario: Modificar información permitida
 
 
 ### HU06 – Publicación de productos o servicios
-Funcionalidad: Publicar productos
+Funcionalidad: Publicar productos. 
 Escenario: Crear producto exitosamente
 | Paso       | Acción                                                           |
 |------------|------------------------------------------------------------------|
@@ -115,7 +116,7 @@ Escenario: Crear producto exitosamente
 
 
 ### HU07 – Editar o eliminar publicaciones
-Funcionalidad: Editar o eliminar producto
+Funcionalidad: Editar o eliminar producto. 
 Escenario: Editar publicación
 | Paso       | Acción                                               |
 |------------|------------------------------------------------------|
@@ -134,7 +135,7 @@ Escenario: Eliminar publicación
 
 
 ### HU08 – Organización de categorías (admin)
-Funcionalidad: Gestionar categorías de empresas
+Funcionalidad: Gestionar categorías de empresas. 
 Escenario: Crear categoría para empresas
 | Paso       | Acción                                                       |
 |------------|--------------------------------------------------------------|
@@ -155,7 +156,7 @@ Escenario: Editar o eliminar categoría
 
 
 ### HU09 – Ver lista de emprendedores
-Funcionalidad: Lista de emprendedores
+Funcionalidad: Lista de emprendedores. 
 Escenario: Acceso a lista de emprendedores
 | Paso       | Acción                                           |
 |------------|--------------------------------------------------|
@@ -166,7 +167,7 @@ Escenario: Acceso a lista de emprendedores
 
 
 ### HU10 – Ver productos de un emprendedor
-Funcionalidad: Catálogo por emprendedor
+Funcionalidad: Catálogo por emprendedor. 
 Escenario: Acceso a productos de un emprendedor
 | Paso       | Acción                                           |
 |------------|--------------------------------------------------|
@@ -177,7 +178,7 @@ Escenario: Acceso a productos de un emprendedor
 
 
 ### HU11 – Ver detalle de un producto
-Funcionalidad: Detalle de producto
+Funcionalidad: Detalle de producto. 
 Escenario: Información completa del producto
 | Paso       | Acción                                           |
 |------------|--------------------------------------------------|
@@ -188,7 +189,7 @@ Escenario: Información completa del producto
 
 
 ### HU12 – Contactar emprendedor vía WhatsApp
-Funcionalidad: Comunicación
+Funcionalidad: Comunicación. 
 Escenario: Redirección a WhatsApp
 | Paso       | Acción                                           |
 |------------|--------------------------------------------------|
@@ -199,7 +200,7 @@ Escenario: Redirección a WhatsApp
 
 
 ### HU13 – Dejar reseña
-Funcionalidad: Reseñas de productos
+Funcionalidad: Reseñas de productos. 
 Escenario: Crear reseña
 | Paso       | Acción                                           |
 |------------|--------------------------------------------------|
@@ -211,7 +212,7 @@ Escenario: Crear reseña
 
 
 ### HU14 – Notificaciones para emprendedor (opcional)
-Funcionalidad: Notificaciones push
+Funcionalidad: Notificaciones push. 
 Escenario: Recibir notificación
 | Paso       | Acción                                           |
 |------------|--------------------------------------------------|
@@ -222,7 +223,7 @@ Escenario: Recibir notificación
 
 
 ### HU15 – Publicar promociones
-Funcionalidad: Promociones temporales
+Funcionalidad: Promociones temporales. 
 Escenario: Crear promoción
 | Paso       | Acción                                           |
 |------------|--------------------------------------------------|
@@ -234,7 +235,7 @@ Escenario: Crear promoción
 
 
 ### HU16 – Moderar reportes (admin)
-Funcionalidad: Gestión de reportes
+Funcionalidad: Gestión de reportes. 
 Escenario: Validar y eliminar contenido inapropiado
 | Paso       | Acción                                           |
 |------------|--------------------------------------------------|
@@ -244,8 +245,8 @@ Escenario: Validar y eliminar contenido inapropiado
 
 
 
-###HU17 – Gestión de usuarios (admin)
-Funcionalidad: Administración de usuarios
+### HU17 – Gestión de usuarios (admin)
+Funcionalidad: Administración de usuarios. 
 Escenario: Suspender o eliminar usuario
 | Paso     | Acción                                           |
 |----------|--------------------------------------------------|
@@ -254,6 +255,6 @@ Escenario: Suspender o eliminar usuario
 | Entonces | el usuario pierde acceso a la app                |                                      |
 
 
-Fecha: 8 de septiembre del 2025
-Versión: ??
-Responsable: Harold Camilo Barrera Giraldo
+Fecha: 8 de septiembre del 2025. 
+Versión: ??  
+Responsable: Harold Camilo Barrera Giraldo.

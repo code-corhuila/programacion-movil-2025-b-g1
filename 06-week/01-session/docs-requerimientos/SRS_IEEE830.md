@@ -199,8 +199,8 @@ Administración (solo administrador)
 • Uso de ORM Prisma (típico en proyectos NestJS) para gestionar consultas y relaciones.  
 
 Ejemplo de tabla:  
-Creamos un tipo de dato ENUM llamado user_role  
-```sql
+Creamos un tipo de dato ENUM llamado user_role y creamos la tabla usuarios. 
+
 CREATE TYPE user_role AS ENUM ('emprendedor', 'comprador', 'admin');
 
 CREATE TABLE users (
@@ -557,6 +557,6 @@ CREATE TABLE users (
 https://www.figma.com/design/nbyajVF3jNafcHBNPk0RiM/Sin-t%C3%ADtulo?node-id=0-1&t=6oLvp91VK13hoVMe-1
 
 
-Fecha: 8 de septiembre del 2025
-Versión: ??
-Responsable: Harold Camilo Barrera Giraldo
+Fecha: 8 de septiembre del 2025. 
+Versión: ??  
+Responsable: Harold Camilo Barrera Giraldo.

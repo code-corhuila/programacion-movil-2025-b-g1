@@ -1,8 +1,8 @@
-INTEGRANTES DEL EQUIPO: 
+# INTEGRANTES DEL EQUIPO: 
 - Harold Camilo Barrera Giraldo
 - Danay Mariana Pereira Ospina
 
-# Instrucciones paso a paso de la entrega
+## Instrucciones paso a paso de la entrega
 
 ### Checklist de calidad
 

@@ -161,6 +161,7 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 
 ![Caso de Uso](Imagenes/CASO_DE_USO.png)
 
+---
 
 ### 3.4 Diagrama de actividad del UC-02 (opcional)
 
@@ -195,6 +196,6 @@ Una descripción de interacciones entre actores y el sistema para conseguir un o
 ![Diagrama UC-10](Imagenes/UC-10.png)
 
 
-Fecha: 8 de septiembre del 2025
-Versión: ??
-Responsable: Harold Camilo Barrera Giraldo y Danay Mariana Pereira Ospina
+Fecha: 8 de septiembre del 2025. 
+Versión: ??   
+Responsable: Harold Camilo Barrera Giraldo y Danay Mariana Pereira Ospina.
