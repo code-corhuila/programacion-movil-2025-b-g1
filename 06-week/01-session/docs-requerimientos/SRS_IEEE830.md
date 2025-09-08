@@ -296,7 +296,6 @@ created_at TIMESTAMP DEFAULT now()
 - 1:1 con Perfil
 - 1:N con Empresa (si es emprendedor)
 - 1:N con Reseña (si es comprador)
-- 1:N con Reporte (como reportante)
 
 
 #### **_Perfil_**
@@ -343,7 +342,6 @@ created_at TIMESTAMP DEFAULT now()
 - N:1 con Empresa
 - N:1 con Categoría
 - 1:N con Reseña
-- 1:N con Reporte
 - 1:N con Promoción
 
 
