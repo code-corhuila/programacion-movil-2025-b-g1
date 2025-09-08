@@ -368,18 +368,6 @@ created_at TIMESTAMP DEFAULT now()
 - N:1 con Producto
 
 
-#### **_Reporte_**
-- Id_reporte (PK)
-- Reportante_Id (FK → Usuario.Id_usuario)
-- Producto_Id (FK → Producto.Id_producto)
-- Motivo
-- Created_At
-
-**Conexiones:**
-- N:1 con Usuario (quien reporta)
-- N:1 con Producto (producto reportado)
-
-
 #### **_Promoción_**
 - Id_promoción (PK)
 - Producto_Id (FK → Producto.Id_producto)

@@ -29,6 +29,10 @@
 
 Mockups: https://www.figma.com/design/nbyajVF3jNafcHBNPk0RiM/Sin-t%C3%ADtulo?node-id=0-1&t=6oLvp91VK13hoVMe-1
 
+### DER (Diagrama Entidad Relación)
+
+![DER](Imagenes/DER.jpeg)
+
 ---
 
 **Fecha:** 8 de septiembre del 2025
