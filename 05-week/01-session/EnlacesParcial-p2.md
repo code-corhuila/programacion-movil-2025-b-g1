@@ -6,7 +6,7 @@
 ---
 
 # ENLACE APP UIZARD
- - https://app.uizard.io/p/7af174da
+ - https://www.figma.com/make/Zf9qUlpBg3EuNCZq8QZjg1/App-Movil-Estacionamiento?node-id=0-1&t=mGBJPCzwRSerlMrV-1
 
  # ENLACE DE VIDEO
- https://vt.tiktok.com/ZSAKqtSKo/
+ - https://vt.tiktok.com/ZSAKqtSKo/
