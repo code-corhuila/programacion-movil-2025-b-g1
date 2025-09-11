@@ -1,24 +1,26 @@
 # Historias de Usuario (documentadas y trazables)
 
-| HU    | Usuario                         | Quiero (objetivo)                                                                 | Para (beneficio)                                           | Prioridad | RF/RFN relacionados     |
-|-------|----------------------------------|------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------|--------------------------|
-| H0    | Usuario (emprendedor o comerciante) | Registrarme con correo institucional, contraseña                                  | Poder acceder a la app y que el sistema                     | Alta      | RF1, RNF1                |
-| H2    | Usuario                         | Iniciar sesión con correo electrónico y rol                                       | Habilite funcionalidades según mi rol                       | Alta      | RF5, RNF1                |
-| HU03  | Emprendedor                     | Recuperar mi contraseña                                                           | En caso de no poder acceder a mi cuenta                     | Alta      | RF6, RF1                 |
-| HU04  | Emprendedor                     | Editar mi perfil (foto, descripción, contacto, nombre)                            | Mostrar más información relevante de mi empresa             | Media     | RF6, RF3                 |
-| HU05  | Comprador                       | Publicar comentarios o reseñas con fotos, precios y descripción                   | Que los emprendedores vean mis productos                    | Media     | RF8, RN10                |
-| HU06  | Comprador                       | Ver la calificación de los productos                                              | Mantener mi catálogo actualizado                            | Alta      | RF9, RN10                |
-| HU07  | Administrador                   | Editar o eliminar publicaciones                                                   | Mantener el sitio actualizado                               | Alta      | RF9, RN10                |
-| HU08  | Comprador                       | Encontrar productos organizados por categorías                                    | Que los compradores encuentren fácilmente los productos     | Alta      | RF10, RN4                |
-| HU09  | Comprador                       | Ver listas de emprendedores disponibles                                           | Elegir un emprendedor para ver sus productos                | Alta      | RF14, RN11               |
-| HU10  | Comprador                       | Conocer todos los emprendedores y ver todos sus productos                         | Que todos los emprendedores se den a conocer                | Alta      | RF12, RN6                |
-| HU1   | Comprador                       | Ver detalle de un producto (foto, descripción, precio, contacto)                  | Decidir si me interesa comprar o contactar                  | Alta      | RF13, RF16               |
-| HU2   | Comprador                       | Contactar al emprendedor vía WhatsApp                                             | Facilitar la comunicación con el emprendedor                | Alta      | RF14, RF16               |
-| HU3   | Comprador                       | Dejar reseña en un producto                                                       | Dar feedback y ayudar a otros usuarios                      | Alta      | RF15, RN6                |
-| HU4   | Emprendedor o negocios          | Ver detalles de contacto o reseña (opcional)                                      | Estar al tanto de la interacción con mis productos          | Media     | RF15, RN6                |
-| HU5   | Emprendedor o negocios          | Publicar productos                                                                | Atraer más clientes                                         | Media     | RF13, RF16               |
-| HU16  | Administrador                   | Revisar y moderar reportes de productos inapropiados                              | Mantener un espacio seguro en la app                        | Alta      | RF17, RNF9               |
-| HU17  | Administrador                   | Suspender cuenta de empresarios que incumplan normas                              | Garantizar el buen uso de la app                            | Alta      | RF18, RNF9               |
+# Product Backlog
+
+| HU   | Usuario                         | Quiero (Objetivo)                                        | Para (Beneficio)                                         | Prioridad | RF/RFN relacionados |
+|------|---------------------------------|----------------------------------------------------------|----------------------------------------------------------|-----------|----------------------|
+| HU01 | Emprendedor o comprador         | Registrarme con correo institucional y contraseña        | Acceder a la app y que el sistema valide mi cuenta       | Alta      | RF1, RNF1 |
+| HU02 | Usuario                         | Iniciar sesión con correo electrónico y rol              | Habilitar funcionalidades según mi rol                   | Alta      | RF5, RNF1 |
+| HU03 | Emprendedor                     | Recuperar mi contraseña                                  | Acceder en caso de olvidarla                             | Media     | RF6, RF1 |
+| HU04 | Administrador                   | Gestionar categorías de empresas                         | Permitir que los emprendedores creen su empresa organizada | Alta      | RF7, RNF2 |
+| HU05 | Emprendedor                     | Crear mi empresa dentro de una categoría                 | Ofrecer mis productos o servicios                        | Alta      | RF8, RNF3 |
+| HU06 | Emprendedor o negocio           | Publicar productos o servicios                           | Atraer más clientes                                      | Alta      | RF9, RF16 |
+| HU07 | Emprendedor o negocio           | Editar o eliminar publicaciones                          | Mantener mis productos actualizados                      | Alta      | RF10, RNF4 |
+| HU08 | Comprador                       | Ver lista de emprendedores                               | Elegir un emprendedor para explorar sus productos        | Alta      | RF11, RNF5 |
+| HU09 | Comprador                       | Ver productos de un emprendedor                          | Explorar lo que ofrece un negocio en específico          | Alta      | RF12, RN6 |
+| HU10 | Comprador                       | Ver detalle de un producto (foto, descripción, precio…)  | Decidir si me interesa comprar o contactar               | Alta      | RF13, RNF7 |
+| HU11 | Comprador                       | Contactar al emprendedor vía WhatsApp                    | Facilitar la comunicación                                | Alta      | RF14, RNF8 |
+| HU12 | Comprador                       | Dejar reseña en un producto                              | Dar feedback y ayudar a otros usuarios                   | Media     | RF15, RN6 |
+| HU13 | Emprendedor                     | Publicar promociones temporales                          | Aumentar mis ventas con descuentos                      | Alta      | RF16, RNF9 |
+| HU14 | Emprendedor                     | Editar mi perfil (foto, descripción, contacto, nombre)   | Mostrar más información relevante de mi empresa          | Media     | RF17, RNF10 |
+| HU15 | Administrador                   | Revisar y moderar reportes de productos inapropiados     | Mantener un espacio seguro en la app                     | Alta      | RF18, RNF11 |
+| HU16 | Administrador                   | Suspender cuentas de emprendedores que incumplan normas  | Garantizar el buen uso de la app                         | Alta      | RF19, RNF12 |
+| HU17 | Emprendedor                     | Recibir notificaciones de interacción (opcional)         | Estar al tanto de la actividad en mis productos          | Media     | RF20, RNF13 |
 
 ## 2.2 Criterios de aceptación (Gherkin)
 
@@ -35,7 +37,6 @@ Escenario: Registro exitoso con correo institucional
 | Y          | envía un token de verificación al correo                              |
 | Y          | mi cuenta queda en estado "pendiente"                                 |
 
-
 Escenario: Activación de cuenta mediante token
 | Paso       | Acción                                      |
 |------------|---------------------------------------------|
@@ -43,7 +44,6 @@ Escenario: Activación de cuenta mediante token
 | Cuando     | ingreso el token en la app                  |
 | Entonces   | mi cuenta cambia a estado "activo"          |
 | Y          | puedo iniciar sesión normalmente            |
-
 
 
 ### HU02 – Inicio de sesión
@@ -57,7 +57,6 @@ Escenario: Inicio de sesión exitoso
 | Cuando     | presiono "Iniciar sesión"                        |
 | Entonces   | puedo acceder a mi perfil y funcionalidades según mi rol |
 
-
 Escenario: Inicio de sesión con credenciales incorrectas
 | Paso       | Acción                                 |
 |------------|----------------------------------------|
@@ -65,7 +64,6 @@ Escenario: Inicio de sesión con credenciales incorrectas
 | Cuando     | intento iniciar sesión                 |
 | Entonces   | la app muestra un mensaje de error     |
 | Y          | no permite el acceso                   |
-
 
 
 ### HU03 – Recuperación de contraseña
@@ -79,31 +77,37 @@ Escenario: Solicitar restablecimiento de contraseña
 | Entonces   | recibo un enlace o token en el correo para restablecerla               |
 
 
+### HU04 – Organización de categorías (admin)
+Funcionalidad: Gestionar categorías de empresas. 
 
-### HU04 – Edición de perfil (emprendedor)
-Funcionalidad: Editar perfil. 
+Escenario: Crear categoría para empresas
+| Paso       | Acción                                                       |
+|------------|--------------------------------------------------------------|
+| Dado que   | soy administrador                                            |
+| Cuando     | creo una nueva categoría con nombre válido                   |
+| Entonces   | la categoría se agrega al sistema                            |
+| Y          | queda disponible para asignar a futuras empresas o emprendedores |
 
-Escenario: Modificar información permitida
-| Paso       | Acción                                           |
-|------------|--------------------------------------------------|
-| Dado que   | estoy en la pantalla de edición de perfil        |
-| Cuando     | cambio foto, descripción, contacto o nombre      |
-| Y          | guardo los cambios                               |
-| Entonces   | los cambios se reflejan en mi perfil             |
+Escenario: Editar o eliminar categoría
+| Paso       | Acción                                                       |
+|------------|--------------------------------------------------------------|
+| Dado que   | soy administrador y selecciono una categoría existente       |
+| Cuando     | modifico su nombre o elimino la categoría                    |
+| Entonces   | los cambios se reflejan en el sistema                        |
+| Y          | las empresas asociadas se ajustan según la acción           |
 
 
+### HU05 – Publicación de empresa
+Funcionalidad: Crear empresa.  
 
-### HU05 – Edición de perfil (comprador)
-Funcionalidad: Editar perfil básico. 
-
-Escenario: Modificar información permitida
-| Paso       | Acción                                 |
-|------------|----------------------------------------|
-| Dado que   | estoy en la pantalla de edición de perfil |
-| Cuando     | cambio foto, nombre o descripción      |
-| Y          | guardo los cambios                     |
-| Entonces   | los cambios se reflejan en mi perfil   |
-
+Escenario: Crear empresa exitosamente
+| Paso       | Acción                                                      |
+|------------|-------------------------------------------------------------|
+| Dado que   | soy emprendedor y selecciono una categoría                  |
+| Cuando     | completo el formulario con nombre, descripción y contacto   |
+| Y          | guardo la información                                       |
+| Entonces   | la empresa se agrega al sistema                             |
+| Y          | queda visible en la categoría seleccionada                  |
 
 
 ### HU06 – Publicación de productos o servicios
@@ -119,7 +123,6 @@ Escenario: Crear producto exitosamente
 | Y          | aparece visible para los compradores                             |
 
 
-
 ### HU07 – Editar o eliminar publicaciones
 Funcionalidad: Editar o eliminar producto. 
 
@@ -130,7 +133,6 @@ Escenario: Editar publicación
 | Cuando     | modifico la información permitida y guardo           |
 | Entonces   | los cambios se reflejan en la publicación            |
 
-
 Escenario: Eliminar publicación
 | Paso       | Acción                                               |
 |------------|------------------------------------------------------|
@@ -139,30 +141,7 @@ Escenario: Eliminar publicación
 | Entonces   | la publicación se elimina del sistema                |
 
 
-
-### HU08 – Organización de categorías (admin)
-Funcionalidad: Gestionar categorías de empresas. 
-
-Escenario: Crear categoría para empresas
-| Paso       | Acción                                                       |
-|------------|--------------------------------------------------------------|
-| Dado que   | soy administrador                                            |
-| Cuando     | creo una nueva categoría con nombre válido                   |
-| Entonces   | la categoría se agrega al sistema                            |
-| Y          | queda disponible para asignar a futuras empresas o emprendedores |
-
-
-Escenario: Editar o eliminar categoría
-| Paso       | Acción                                                       |
-|------------|--------------------------------------------------------------|
-| Dado que   | soy administrador y selecciono una categoría existente       |
-| Cuando     | modifico su nombre o elimino la categoría                    |
-| Entonces   | los cambios se reflejan en el sistema                        |
-| Y          | las empresas asociadas se ajustan según la acción           |
-
-
-
-### HU09 – Ver lista de emprendedores
+### HU08 – Ver lista de emprendedores
 Funcionalidad: Lista de emprendedores. 
 
 Escenario: Acceso a lista de emprendedores
@@ -173,8 +152,7 @@ Escenario: Acceso a lista de emprendedores
 | Entonces   | veo la lista de todos los emprendedores registrados |
 
 
-
-### HU10 – Ver productos de un emprendedor
+### HU09 – Ver productos de un emprendedor
 Funcionalidad: Catálogo por emprendedor. 
 
 Escenario: Acceso a productos de un emprendedor
@@ -185,8 +163,7 @@ Escenario: Acceso a productos de un emprendedor
 | Entonces   | veo todos los productos que ha publicado         |
 
 
-
-### HU11 – Ver detalle de un producto
+### HU10 – Ver detalle de un producto
 Funcionalidad: Detalle de producto. 
 
 Escenario: Información completa del producto
@@ -197,8 +174,7 @@ Escenario: Información completa del producto
 | Entonces   | veo foto, descripción, precio, y contacto del emprendedor |
 
 
-
-### HU12 – Contactar emprendedor vía WhatsApp
+### HU11 – Contactar emprendedor vía WhatsApp
 Funcionalidad: Comunicación. 
 
 Escenario: Redirección a WhatsApp
@@ -209,8 +185,7 @@ Escenario: Redirección a WhatsApp
 | Entonces   | la app abre WhatsApp con el número del emprendedor |
 
 
-
-### HU13 – Dejar reseña
+### HU12 – Dejar reseña
 Funcionalidad: Reseñas de productos. 
 
 Escenario: Crear reseña
@@ -222,20 +197,7 @@ Escenario: Crear reseña
 | Entonces   | la reseña se agrega al producto y es visible para el emprendedor y otros usuarios |
 
 
-
-### HU14 – Notificaciones para emprendedor (opcional)
-Funcionalidad: Notificaciones push. 
-
-Escenario: Recibir notificación
-| Paso       | Acción                                           |
-|------------|--------------------------------------------------|
-| Dado que   | un comprador deja una reseña o contacto          |
-| Cuando     | ocurre la acción                                 |
-| Entonces   | el emprendedor recibe una notificación en su dispositivo |
-
-
-
-### HU15 – Publicar promociones
+### HU13 – Publicar promociones
 Funcionalidad: Promociones temporales. 
 
 Escenario: Crear promoción
@@ -247,8 +209,19 @@ Escenario: Crear promoción
 | Entonces   | la promoción se muestra vinculada al producto    |
 
 
+### HU14 – Edición de perfil (emprendedor)
+Funcionalidad: Editar perfil. 
 
-### HU16 – Moderar reportes (admin)
+Escenario: Modificar información permitida
+| Paso       | Acción                                           |
+|------------|--------------------------------------------------|
+| Dado que   | estoy en la pantalla de edición de perfil        |
+| Cuando     | cambio foto, descripción, contacto o nombre      |
+| Y          | guardo los cambios                               |
+| Entonces   | los cambios se reflejan en mi perfil             |
+
+
+### HU15 – Moderar reportes (admin)
 Funcionalidad: Gestión de reportes. 
 
 Escenario: Validar y eliminar contenido inapropiado
@@ -259,8 +232,7 @@ Escenario: Validar y eliminar contenido inapropiado
 | Entonces   | puedo eliminar la publicación o empresa según gravedad |
 
 
-
-### HU17 – Gestión de usuarios (admin)
+### HU16 – Suspender cuentas (admin)
 Funcionalidad: Administración de usuarios. 
 
 Escenario: Suspender o eliminar usuario
@@ -268,7 +240,18 @@ Escenario: Suspender o eliminar usuario
 |----------|--------------------------------------------------|
 | Dado que | soy administrador                                |
 | Cuando   | selecciono un usuario infractor y lo suspendemos/eliminamos |
-| Entonces | el usuario pierde acceso a la app                |                                      |
+| Entonces | el usuario pierde acceso a la app                |
+
+
+### HU17 – Notificaciones para emprendedor (opcional)
+Funcionalidad: Notificaciones push. 
+
+Escenario: Recibir notificación
+| Paso       | Acción                                           |
+|------------|--------------------------------------------------|
+| Dado que   | un comprador deja una reseña o contacto          |
+| Cuando     | ocurre la acción                                 |
+| Entonces   | el emprendedor recibe una notificación en su dispositivo |
 
 ---
 

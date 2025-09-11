@@ -6,8 +6,8 @@
 
 | HU   | Usuario                         | Quiero (Objetivo)                                        | Para (Beneficio)                                         | Prioridad | RF/RFN relacionados |
 |------|---------------------------------|----------------------------------------------------------|----------------------------------------------------------|-----------|----------------------|
-| HU01 | Emprendedor o comerciante       | Registrarme con correo institucional y contraseña        | Acceder a la app y que el sistema valide mi cuenta       | Alta      | RF1, RNF1 |
-| HU02 | Usuario                         | Iniciar sesión con correo electrónico y rol              | Habilitar funcionalidades según mi rol                   | Alta      | RF5, RNF1 |
+| HU01 | Usuario (emprendedor o comerciante)    | Registrarme con correo institucional y contraseña        | Acceder a la app y que el sistema valide mi cuenta       | Alta      | RF1, RNF1 |
+| HU02 | Usuario                         | Iniciar sesión con correo electrónico, contraseña y rol              | Habilitar funcionalidades según mi rol                   | Alta      | RF5, RNF1 |
 | HU03 | Emprendedor                     | Recuperar mi contraseña                                  | Acceder en caso de olvidarla                             | Alta      | RF6, RF1 |
 | HU04 | Emprendedor                     | Editar mi perfil (foto, descripción, contacto, nombre)   | Mostrar más información relevante de mi empresa          | Media     | RF6, RF3 |
 | HU05 | Comprador                       | Publicar comentarios o reseñas con fotos, precios y desc.| Que los emprendedores vean mis productos                 | Media     | RF8, RN10 |
