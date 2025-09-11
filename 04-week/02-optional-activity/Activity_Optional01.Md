@@ -7,13 +7,13 @@ En la universidad, muchos estudiantes buscan formas de generar ingresos para cub
 
 ## Justificación De La Aplicación Móvil:
 
-Una aplicación móvil pensada para estudiantes universitarios de corhuila sería una solución práctica y accesible, ya que serviría como un mercado digital interno de la comunidad estudiantil. En ella, los estudiantes podrían registrar sus productos o servicios, publicar fotos, precios y promociones, y los demás compañeros tendrían un canal para contactar directamente y pagar el producto fisicamente. La app va ha tener categorías (alimentos, accesorios, servicios o mas), sistema de reseñas. Además de impulsar el emprendimiento estudiantil, fomentaría la economía colaborativa dentro de la universidad.
+Una aplicación móvil pensada para estudiantes universitarios de Corhuila sería una solución práctica y accesible, ya que serviría como un mercado digital interno de la comunidad estudiantil. En ella, los estudiantes podrían registrar sus productos o servicios, publicar fotos, precios y promociones, y los demás compañeros tendrían un canal para contactar directamente y pagar el producto físicamente. La app va a tener categorías (alimentos, accesorios, servicios o más), sistema de reseñas. Además de impulsar el emprendimiento estudiantil, fomentaría la economía colaborativa dentro de la universidad.
 
-## Publico Objetivo:
+## Público Objetivo:
 
 Emprendedores: Va enfocado a los estudiantes de la universidad entre 18 y 28 años con emprendimientos propios, nivel tecnológico medio (manejan redes sociales y apps básicas). Su uso sería diario para editar fotos o datos de la empresa que quieran cambiar y gestionar ventas.
 
-Compradores: Para estudiantes de la universidad corhuila, rango de edad 16 a 30 años, con nivel tecnológico medio-alto, interesados en consumir productos locales y apoyar a sus compañeros. Su frecuencia de uso sería varias veces por semana, según la necesidad de compra.
+Compradores: Para estudiantes de la universidad Corhuila, rango de edad 16 a 30 años, con nivel tecnológico medio-alto, interesados en consumir productos locales y apoyar a sus compañeros. Su frecuencia de uso sería varias veces por semana, según la necesidad de compra.
 
 ## Definición del ciclo de vida del proyecto
 
@@ -31,7 +31,7 @@ partition "Diseño UX/UI" {
   :Prototipos de baja fidelidad;
   :Pruebas de usabilidad rápidas;
   :Diseño visual (alta fidelidad);
-  :Especificaciones de interacción y assets con figma;
+  :Especificaciones de interacción y assets con Figma;
 }
 |Dev|
 partition "Desarrollo" {
@@ -39,7 +39,7 @@ partition "Desarrollo" {
   :Implementar autenticación y perfil;
   :Módulo de publicaciones y catálogo;
   :Integraciones (WhatsApp);
-  :Implementar notificaciones y promociones(opcional);
+  :Implementar notificaciones y promociones (opcional);
 }
 |QA|
 partition "Pruebas" {
@@ -60,13 +60,13 @@ stop
 
 ![Logo App-Nexo](Diagrama_UML_Nexo1.png)
 
-## En el trello se colocaron estas 5 tareas 
+## En el Trello se colocaron estas 5 tareas
 
 # Identificación del problema:
 Tarea: Redactar documento de diagnóstico que describa el problema principal que la app busca resolver (falta de visibilidad para emprendedores, dificultad de contacto entre compradores y vendedores, etc.).
 
 # Análisis de mercado.
-Tarea: Investigar apps similares, identificar necesidades del público objetivo y analizar tendencias en comercio digital en la universidad pero también a el mundo.
+Tarea: Investigar apps similares, identificar necesidades del público objetivo y analizar tendencias en comercio digital en la universidad pero también al mundo.
 
 # Selección de plataforma y tipo de app.
 Tarea: Evaluar opciones tecnológicas (web, móvil nativa, híbrida) y seleccionar la más adecuada según el público, presupuesto y escalabilidad.
@@ -77,7 +77,8 @@ Tarea: Diseñar la estructura visual básica de la app (pantallas de inicio, reg
 # Reunión de validación.
 Tarea: Organizar reunión con stakeholders (usuarios, docentes, equipo técnico) para presentar avances y recibir retroalimentación.
 
-# Link de vista del trello
-https://trello.com/invite/b/68b213e295cae550e6b1d489/ATTI9a8cb338de83ddc71e2e4e1bfb90b90e41088CB6/nexo
+# Link de vista de Jira
+Para acceder, profe, tiene que aceptarme la solicitud que le envié al correo de Corhuila, para que lo pueda ver, ya que por la versión gratuita no me deja poder colocarlo público.
+https://app-nexo.atlassian.net/jira/software/projects/APPNEXO1/boards/1/backlog?atlOrigin=eyJpIjoiYTdlYzIyMDVkYTQ3NGQ1NGFhODQwNmVhNzQzODVjNDQiLCJwIjoiaiJ9
 
 
