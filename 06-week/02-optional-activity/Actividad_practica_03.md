@@ -122,7 +122,7 @@ Se realizarán entrevistas cortas a dos grupos principales: **emprendedores** y 
 
 ## Diagrama de Casos de Uso
 
-![Casos_de_Uso_UML](/06-week/02-optional-activity/Diagrama_casos_de_uso.png)
+![Casos_de_Uso_UML](Imagenes/Diagrama_casos_de_uso.png)
 
 ---
 

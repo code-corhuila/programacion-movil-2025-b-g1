@@ -80,8 +80,8 @@ Se definirá un límite WIP de **máximo 2 HU** en *In Progress* para evitar sat
 
 LINK JIRA: https://corhuila-nexo-team2025.atlassian.net/jira/software/projects/SCRUM/boards/1?atlOrigin=eyJpIjoiZWJkMmExZWY2NjY0NGE5NGIxNGExMDEyZjBjMjEwMDIiLCJwIjoiaiJ9 
 
-![AppNexoJira_imagen1](/06-week/02-optional-activity/AppNexo1_Jira.png)
-![AppNexoJira_imagen2](/06-week/02-optional-activity/AppNexo2_Jira.png)
+![AppNexoJira_imagen1](Imagenes/AppNexo1_Jira.png)
+![AppNexoJira_imagen2](Imagenes/AppNexo2_Jira.png)
 
 
 ---
