@@ -325,46 +325,46 @@ Acciones administrativas de control y calidad.
 
 ![Modelado de datos](Imagenes/Modelado_datos.png)
 
-# Flujo del Usuario Emprendedor
+## Flujo del Usuario Emprendedor
 
-## 1. Registro y Autenticación
+### 1. Registro y Autenticación
 - **Registro:** El usuario crea su cuenta ingresando su `first_names`, `last_names`, `email`, `phone`, `name` (role), `username` y `password_hash`.  
   El sistema verifica el email (@corhuila.edu.co) y, si es válido, el `status` de la cuenta se establece en `pending`.  
   Si no es válido, se muestra en la pantalla un mensaje de error.
 - **Activación:** Al verificar el correo, el `status` cambia a `active`.
 - **Inicio de Sesión:** Inicia sesión utilizando su `username` y `password`.
 
-## 2. Creación de la Empresa
+### 2. Creación de la Empresa
 - El emprendedor inicia sesión. Si su cuenta (`user_account`) no está vinculada a una `company`, se le presenta la opción de crear una.
 - Llena un formulario con los siguientes campos: `name`, `description` y `url`.  
   El sistema asocia esta nueva `company` con el `id` de su `user_account` (`owner_account_id`).
 - Las imágenes (logo) se gestionan de forma flexible, subiendo la `url` de un archivo que se vinculará a la entidad `company` (`entity_type: 'company'`) en la tabla `system_file`.
 
-## 3. Gestión de Productos
+### 3. Gestión de Productos
 - Desde su `company`, el emprendedor puede agregar un `product`.
 - Llena un formulario con: `title`, `description`, `price`, `url` (foto) y `promotion_price` (opcional).
 - Las imágenes de los productos se guardan en `system_file` con `entity_type: 'product'`.
 - Puede **editar o eliminar** sus propios productos.
 
-## 4. Gestión de Promociones
+### 4. Gestión de Promociones
 - Desde un `product` específico, puede habilitar una promoción configurando el campo `is_promotion` a `true` y estableciendo el `promotion_price`.
 
-## 5. Restricciones
+### 5. Restricciones
 - No puede crear categorías.
 - Aunque la relación `user_account 1:N company` permite que un usuario pueda tener varias empresas, en esta versión se restringe a **una sola empresa por usuario** como regla de negocio.
 
 ---
 
-# Flujo del Usuario Administrador
+## Flujo del Usuario Administrador
 
-## 1. Registro y Autenticación
+### 1. Registro y Autenticación
 - El admin se registra como un usuario normal. El sistema le asigna el role de **admin**.
 - Al iniciar sesión, el sistema identifica su `role_id` y le presenta las opciones de administración.
 
-## 2. Gestión de Categorías
+### 2. Gestión de Categorías
 - Puede crear, editar y eliminar nuevas categorías en la tabla `category` ingresando los campos de `url` y `name`.
 
-## 3. Gestión de Empresas y Usuarios
+### 3. Gestión de Empresas y Usuarios
 - El admin puede ver un listado de todos los `user_account` y `company` registrados.
 - El admin hace revisiones periódicas y puede tomar acciones de moderación como **suspend** o **reactivate** a un usuario o empresa.  
   Esta acción se registra en la tabla `moderation_action`, indicando el `admin_id`, `target_id` y `target_type`.
@@ -372,47 +372,47 @@ Acciones administrativas de control y calidad.
 
 ---
 
-# Flujo del Usuario Comprador
+## Flujo del Usuario Comprador
 
-## 1. Registro y Autenticación
+### 1. Registro y Autenticación
 - El proceso es idéntico al del emprendedor, con la diferencia de que el `name` (role) asignado es **comprador**.
 
-## 2. Exploración del Catálogo
+### 2. Exploración del Catálogo
 - Puede navegar y buscar productos publicados.
 - Los productos se muestran con sus detalles (`title`, `description`, `price`) y se pueden filtrar por `category`.
 
-## 3. Interacción con las Publicaciones
+### 3. Interacción con las Publicaciones
 - Al seleccionar un producto, puede iniciar un `contact_request` para comunicarse directamente con el emprendedor a través de **WhatsApp**.
 
-## 4. Gestión de Perfil
+### 4. Gestión de Perfil
 - Puede editar sus datos personales en la tabla `person` (`first_name`, `last_name`, `phone`).  
 - También en la tabla `user_account` (`username`, `password_hash`).
 
 ---
 
-# 1.3.5 Restricciones de diseño — plataformas, SDKs, guías UI
+### 1.3.5 Restricciones de diseño — plataformas, SDKs, guías UI
 
-## Plataformas soportadas
+#### Plataformas soportadas
 - Inicialmente: **Next.js (web)**.  
 - Futuro: migración a **Ionic + React** para soportar Android/iOS.
 - Backend en **NestJS (Node.js)** con **PostgreSQL**.
 
-## Infraestructura
+#### Infraestructura
 - Imágenes en **AWS S3**.  
 - Base de datos centralizada en **AWS RDS** (PostgreSQL).
 
-## SDKs y librerías
+#### SDKs y librerías
 - Librerías oficiales de **AWS SDK** para manejo de imágenes.  
 - **React Navigation** para navegación móvil.  
 - Validación de correos y autenticación con librerías estándar (**JWT**).
 
-## Guías de UI/UX
+#### Guías de UI/UX
 - Interfaz siguiendo **Material Design** (Android).  
 - Formularios y botones accesibles (contraste, tamaño mínimo de toque ≥ 44px).
 
 ---
 
-# 1.3.6 Atributos del sistema (RNF)
+### 1.3.6 Atributos del sistema (RNF)
 
 - **Seguridad:** credenciales cifradas, autenticación con correo institucional, control de roles (admin/emprendedor/comprador).  
 - **Disponibilidad:** uptime ≥ 99%, tolerancia a fallos básicos.  
@@ -423,7 +423,7 @@ Acciones administrativas de control y calidad.
 
 ---
 
-# 1.3.7 Requisitos de internacionalización/localización
+### 1.3.7 Requisitos de internacionalización/localización
 
 - **Formato de datos:** fecha (DD/MM/YYYY), moneda (COP, $), números.  
 - **Internacionalización futura:** preparado para varios idiomas con `i18n`.  
@@ -431,30 +431,30 @@ Acciones administrativas de control y calidad.
 
 ---
 
-# 1.3.8 Requisitos legales y de privacidad
+### 1.3.8 Requisitos legales y de privacidad
 
 - Cumplimiento con la **Ley 1581 de 2012** y el **Decreto 1377 de 2013** (Colombia).  
 - Datos sensibles (correo, teléfono, contraseña, empresa) cifrados y transmitidos por **HTTPS**.  
 
-## Consentimiento informado
+#### Consentimiento informado
 - Los usuarios deben aceptar explícitamente la política de privacidad antes de registrarse.  
 - Imágenes y publicaciones se usan solo dentro de la plataforma.
 
-## Uso legal
+#### Uso legal
 - Solo estudiantes de **Corhuila** con correo institucional válido pueden registrarse.  
 - Prohibido contenido ilegal, ofensivo o discriminatorio.  
 - El admin puede eliminar publicaciones, empresas o usuarios que incumplan normas.
 
-## Seguridad y privacidad en comunicaciones
+#### Seguridad y privacidad en comunicaciones
 - Comunicación app-backend vía **HTTPS**.  
 - Integraciones externas (WhatsApp) no almacenan datos adicionales.
 
-## Almacenamiento y transferencia de datos
+#### Almacenamiento y transferencia de datos
 - Imágenes en **AWS S3** con URLs firmadas.
 
 ---
 
-# 1.4 Apéndices
+### 1.4 Apéndices
 [Diseño en Figma](https://www.figma.com/design/nbyajVF3jNafcHBNPk0RiM/Sin-t%C3%ADtulo?node-id=0-1&t=6oLvp91VK13hoVMe-1)
 
 
