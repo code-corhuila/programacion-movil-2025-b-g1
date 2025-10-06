@@ -18,6 +18,4 @@ export class UserResponseDto {
     example: 'camilo@gmail.com' 
   })
   email: string;
-  
-  // Puedes omitir la contraseña para el DTO de respuesta.
 }
