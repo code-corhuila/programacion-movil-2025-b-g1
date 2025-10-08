@@ -1,0 +1,3 @@
+GitHub:https://github.com/code-corhuila/programacion-movil-2025-b-g1/tree/activity/10-week
+HU en Jira: https://corhuila-team-pnwmdk5n.atlassian.net/jira/software/projects/KAN/boards/1/backlog?atlOrigin=eyJpIjoiNDQ5OTA1N2YxZDRmNDc1ZmExMzVkOTFlNDlkNTJlMWIiLCJwIjoiaiJ9
+Video YouTube: https://youtu.be/vP7-qVvAHHg
