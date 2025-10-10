@@ -233,6 +233,13 @@ Roles precargados (INSERT inicial):
 - emprendedor  
 - comprador  
 
+**verification_token**  
+- id (UUID, PK)  
+- token (string) ← código numérico de 6 dígitos  
+- expires_at (timestamp)  
+- created_at (timestamp, default: now())  
+- user_account_id (UUID, unique, FK → user_account)  
+
 ---
 
 #### Módulo: Company and Product  
@@ -322,6 +329,7 @@ Acciones administrativas de control y calidad.
 - system_file **1:N** file_type (cada archivo tiene un tipo definido)  
 - system_file se vincula dinámicamente a company o product vía entity_type y entity_id  
 - contact_request apunta a company y opcionalmente a product y buyer  
+- Cada user_account puede tener solo un verification_token activo (**1:1**).
 
 ![Modelado de datos](Imagenes/Modelado_datos.png)
 
