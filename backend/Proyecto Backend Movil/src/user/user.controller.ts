@@ -8,15 +8,12 @@ export class UsuarioController {
     constructor(private readonly usuarioService: UsuarioService) {}
 
     @Post('register')
-    // Usamos el DTO
     async register(@Body() createDto: CreateUserDto) {
-        // 3. Pasar el objeto DTO completo
         return this.usuarioService.register(createDto);
     }
 
     @Post('login')
     async login(@Body() loginDto: LoginUserDto) {
-        // 3. Pasar el objeto DTO completo
         return this.usuarioService.login(loginDto);
     }
 

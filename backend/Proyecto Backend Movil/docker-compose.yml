@@ -9,7 +9,6 @@ services:
       POSTGRES_PASSWORD: passwordflashcards
       POSTGRES_DB: flashcards_db
     ports:
-      # CRÍTICO: Mapea el puerto local 5433 al puerto interno 5432
       - '5433:5432' 
     volumes:
       - postgres_data:/var/lib/postgresql/data
