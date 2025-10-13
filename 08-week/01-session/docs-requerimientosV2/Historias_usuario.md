@@ -24,7 +24,7 @@
 ## 2.2 Criterios de aceptación (Gherkin)
 
 ### HU01 – Registro de usuario (emprendedor o comprador)
-**Funcionalidad:** Registro de usuario  
+**Funcionalidad:** Registro y activación de cuenta de usuario
 
 **Escenario: Registro exitoso con correo institucional**  
 - Dado que estoy en la pantalla de registro  
@@ -33,12 +33,21 @@
 - Entonces el sistema valida que el correo tenga dominio `@corhuila.edu.co`  
 - Y envía un token de verificación al correo  
 - Y mi cuenta queda en estado "pendiente"  
+- Y muestra un mensaje informando que el token será válido durante 1 minuto
+- Y existe un botón para solicitar un nuevo token en caso de expiración o pérdida.
 
 **Escenario: Activación de cuenta mediante token**  
-- Dado que recibí el token en mi correo  
-- Cuando ingreso el token en la app  
-- Entonces mi cuenta cambia a estado "activo"  
+- Dado que recibí el token en mi correo institucional
+- Cuando ingreso el token en la aplicación
+- Entonces el sistema valida el código,
+- Y mi cuenta cambia a estado "activo"
 - Y puedo iniciar sesión normalmente  
+
+**Escenario alternativo: Token inválido o expirado**  
+- Dado que intento ingresar un token inválido o cuya vigencia de 1 minuto ha expirado,
+- Cuando el sistema valida el token,
+- Entonces muestra un mensaje de error indicando que el token no es válido o ha expirado,
+- Y ofrece la opción de solicitar un nuevo token de verificación.
 
 ---
 
