@@ -4,7 +4,7 @@
 
 | ID   | Como (rol)                | Quiero (objetivo)                                                                                                                                 | Para (beneficio)                                             | Prioridad | RF/RFN relacionados        |
 |------|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------|----------------------------|
-| HU01 | Usuario (emprendedor o comprador) | Registrarme con nombres, apellidos, correo institucional, teléfono, rol, nombre usuario y contraseña.                                           | Poder acceder a la app y que el sistema habilite funcionalidades según mi rol | Alta      | RF-01, RNF-01              |
+| HU01 | Usuario (emprendedor o comprador) | Registrarme ingresando mis datos personales (nombres, apellidos, correo institucional, teléfono, rol, nombre de usuario y contraseña) y recibir un token de verificación en mi correo electrónico                                           | Poder activar mi cuenta mediante el token recibido y acceder a la aplicación con las funcionalidades habilitadas según mi rol | Alta      | RF-01, RF-02, RF-03, RNF-01              |
 | HU02 | Usuario                   | Iniciar sesión con correo o nombre usuario, y contraseña                                                                                         | Acceder a mi perfil y a las funcionalidades de mi rol        | Alta      | RF-05, RNF-01              |
 | HU03 | Usuario                   | Recuperar mi contraseña                                                                                                                           | No perder acceso a mi cuenta                                 | Media     | RF-04, RFN-01              |
 | HU04 | Emprendedor                | Editar mi perfil (nombre, descripción, foto/imagen)                                                                                              | Mostrar información relevante de mi empresa                  | Alta      | RF-06, RNF-03              |
@@ -24,7 +24,7 @@
 ## 2.2 Criterios de aceptación (Gherkin)
 
 ### HU01 – Registro de usuario (emprendedor o comprador)
-**Funcionalidad:** Registro de usuario  
+**Funcionalidad:** Registro y activación de cuenta de usuario
 
 **Escenario: Registro exitoso con correo institucional**  
 - Dado que estoy en la pantalla de registro  
@@ -33,12 +33,22 @@
 - Entonces el sistema valida que el correo tenga dominio `@corhuila.edu.co`  
 - Y envía un token de verificación al correo  
 - Y mi cuenta queda en estado "pendiente"  
+- Y muestra un mensaje informando que el token será válido durante 1 minuto
+- Y existe un botón para solicitar un nuevo token en caso de expiración o pérdida.
 
 **Escenario: Activación de cuenta mediante token**  
-- Dado que recibí el token en mi correo  
-- Cuando ingreso el token en la app  
-- Entonces mi cuenta cambia a estado "activo"  
+- Dado que recibí el token en mi correo institucional
+- Cuando ingreso el token en la aplicación
+- Entonces el sistema valida el código,
+- Y mi cuenta cambia a estado "activo"
 - Y puedo iniciar sesión normalmente  
+
+**Escenario alternativo: Token inválido o expirado**  
+- Dado que intento ingresar un token inválido o cuya vigencia de 1 minuto ha expirado,
+- Cuando el sistema valida el token,
+- Entonces muestra un mensaje de error indicando que el token no es válido o ha expirado,
+- Y ofrece la opción de solicitar un nuevo token de verificación.
+ 
 
 ---
 
@@ -203,7 +213,7 @@
 
 ---
 
-**Fecha:** 10 de octubre del 2025  
+**Fecha:** 12 de octubre del 2025  
 **Versión:** #2  
 **Responsables:**  
 - Danay Mariana Pereira Ospina  
