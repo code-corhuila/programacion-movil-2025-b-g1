@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Experiencia de Usuario</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --color-principal: #111D13;
+            --color-secundario: #E6FAFC;
+            --color-fondo-claro-d: #F1F7EE;
+            --color-fondo-claro: #f4f7f6;
+            --color-sombra: rgba(0, 0, 0, 0.1);
+            --color-texto: #333;
+            --color-git: #501DAF;
+            --color-whatsapp: #075e54;
+            --color-secundario-w: #25d366;
+            --color-terciario-w: #128c7e;
+            --color-duolingo: #58cc02;
+            --color-secundario-d: #ffc200;
+            --color-terciario-d: #f7f7f7;
+        }
+
+        /* Estilos Globales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--color-texto);
+            background-color: var(--color-fondo-claro);
+            padding: 20px;
+        }
+
+        .analisis-ux {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px var(--color-sombra);
+        }
+
+        /* Títulos */
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--color-principal);
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+        }
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--color-principal);
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        /* Estilo para los Ejemplos */
+        .ejemplo-whatsapp {
+            margin-bottom: 25px;
+            padding: 10px 20px;
+            border-left: 10px solid var(--color-secundario-w);
+            background-color: var(--color-fondo-claro-d);
+            border-radius: 10px;
+        }
+
+        .ejemplo-duolingo {
+            margin-bottom: 25px;
+            padding: 10px 20px;
+            border-left: 10px solid var(--color-secundario-d);
+            background-color: var(--color-terciario-d);
+            border-radius: 10px;
+        }
+
+        .lista-whatsapp li::marker {
+            color: var(--color-whatsapp);
+        }
+
+        .lista-duolingo li::marker {
+            color: var(--color-duolingo)
+        }
+
+
+        .strong-w {
+            color: var(--color-whatsapp);
+        }
+
+        .strong-d {
+            color: var(--color-duolingo);
+        }
+
+        .referencias {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+
+        .referencias h4 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--color-texto);
+            margin-bottom: 15px;
+        }
+
+        .referencias ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .referencias li {
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        /* Estilo de la etiqueta de enlace <a> */
+        .referencias a {
+            color: var(--color-principal);
+            /* Color azul del enlace */
+            text-decoration: none;
+            /* Quitar el subrayado por defecto */
+            transition: color 0.3s ease;
+        }
+
+        /* Efecto al pasar el ratón */
+        .referencias-duolingo a:hover {
+            color: var(--color-secundario-d);
+            /* Cambia a verde al pasar el ratón */
+            text-decoration: underline;
+        }
+
+        .referencias-whatsapp a:hover {
+            color: var(--color-secundario-w);
+            /* Cambia a verde al pasar el ratón */
+            text-decoration: underline;
+        }
+
+        a.referencias-github:hover {
+            color: var(--color-git);
+            /* Usará el color amarillo/oro (#EDC531) */
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="analisis-ux">
+        <h2>Análisis de Experiencia de Usuario (UX)</h2>
+
+        <article class="caracteristicas-ejemplos">
+
+            <div class="ejemplo-duolingo">
+                <h3 class="strong-d">Duolingo</h3>
+                <p>La aplicación móvil Duolingo garantiza una experiencia de usuario satisfactoria a través de
+                    varias características específicas:</p>
+                <ul class="lista-duolingo">
+                    <li>
+                        <strong class="strong-d">Enfoque lúdico y accesible: </strong>Duolingo utiliza un sistema de
+                        gamificación con puntos, gemas
+                        y recompensas que hace que el proceso de aprendizaje sea dinámico y motivador. Las lecciones son
+                        cortas y variadas, con ejercicios que incluyen selección múltiple, traducción, escucha y
+                        repetición oral para mantener el interés activo del usuario.
+                    </li>
+
+                    <li>
+                        <strong class="strong-d">Método progresivo y personalizado:</strong> Los cursos están
+                        organizados por temáticas y niveles que el
+                        usuario puede avanzar a su propio ritmo, sin presión, adaptándose al tiempo disponible y
+                        habilidades individuales. Cada usuario establece metas diarias y realiza un test inicial para
+                        ajustar el nivel de dificultad.
+                    </li>
+
+                    <li>
+                        <strong class="strong-d">Accesibilidad y disponibilidad: </strong> La app es multidispositivo
+                        (móvil, tablet, PC) y permite
+                        continuar aprendiendo en cualquier lugar con conexión a Internet, aprovechando tiempos muertos.
+                    </li>
+
+                    <li>
+                        <strong class="strong-d">Sistema de notificaciones:</strong> Envía alertas diarias para recordar
+                        al usuario realizar
+                        actividades, ayudando a mantener la regularidad en el aprendizaje.
+                    </li>
+
+                    <li>
+                        <strong class="strong-d">Modelo freemium: </strong>Ofrece acceso gratuito a la mayoría de sus
+                        funcionalidades con
+                        opción de suscripción premium para servicios adicionales sin publicidad y características
+                        extras.
+                    </li>
+
+                    <li>
+                        <strong class="strong-d">Diseño visual y didáctico: </strong>Uso de imágenes para asociación
+                        visual de vocabulario y
+                        diseño intuitivo que facilita la navegación.
+                    </li>
+
+                    <li>
+                        <strong class="strong-d">Monitoreo y estadísticas:</strong>Visualización del progreso mediante
+                        gráficos y reportes
+                        dentro de la app, aunque aún se recomienda mejorar con opciones de descarga de datos para
+                        análisis más detallados.
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="ejemplo-whatsapp">
+                <h3 class="strong-w">WhatsApp</h3>
+                <p>Las características más relevantes de WhatsApp que garantizan una experiencia de usuario
+                    satisfactoria se enfocan en la rapidez, la personalización y la funcionalidad de comunicación,
+                    adaptándose tanto al uso personal como empresarial.</p>
+                <h1>Funciones clave para la experiencia de usuario en WhatsApp:</h1>
+                <ul class="lista-whatsapp">
+                    <li>
+                        <strong class="strong-w">integración de inteligencia artificial (IA):</strong> La incorporación
+                        de Meta AI en la
+                        barra de búsqueda permite realizar consultas rápidas y acceder a asistencia mediante prompts,
+                        mejorando la conveniencia y ahorrando tiempo.
+                    </li>
+
+                    <li>
+                        <strong class="strong-w">Fijar chats importantes:</strong>La posibilidad de mantener hasta tres
+                        conversaciones visibles en la parte superior facilita el acceso inmediato a contactos o grupos
+                        clave, ideal para usuarios que necesitan priorizar ciertos chats.
+                    </li>
+
+                    <li>
+                        <strong class="strong-w">Automatización y respuestas rápidas:</strong>En la versión Business, se
+                        pueden crear respuestas automáticas, gestionar plantillas y administrar mejor la comunicación
+                        con clientes, potenciando la atención personalizada y eficiente.
+                    </li>
+
+                    <li>
+                        <strong class="strong-w">Seguridad y privacidad:</strong>WhatsApp ofrece protección con cifrado
+                        de extremo a extremo, autenticación en doble factor y políticas para prevenir el spam,
+                        reforzando la confianza del usuario.
+                    </li>
+
+                    <li>
+                        <strong class="strong-w">Multiplataforma y facilidad de uso:</strong>La app está diseñada para
+                        ser intuitiva y funcional en diferentes dispositivos, aunque aún presenta retos en la
+                        sincronización y optimización de la versión web y de escritorio
+                    </li>
+                    <li>
+                        <strong class="strong-w">Automatización y chatbots:</strong> La API de WhatsApp Business permite
+                        automatizar respuestas y gestionar interacciones a gran escala, mejorando la experiencia al
+                        brindar atención rápida y constante, incluso fuera del horario laboral.
+                    </li>
+                </ul>
+            </div>
+
+        </article>
+        <div>
+            <footer class="referencias">
+                <h4>Bibliografía:</h4>
+
+                <ul>
+
+                    <li class="referencias-duolingo">
+                        <a href="https://www.gostudent.org/es-es/blog/duolingo-ventajas-inconvenientes-app-idiomas"
+                            target="_blank" rel="noopener noreferrer">
+                            Duolingo a examen: los pros y contras de aprender idiomas con esta app
+                        </a>
+                    </li>
+
+                    <li class="referencias-duolingo">
+                        <a href="https://translate.google.com/translate?u=https%3A%2F%2Fwww.britannica.com%2Ftopic%2FDuolingo&hl=es&sl=en&tl=es&client=srp"
+                            target="_blank" rel="noopener noreferrer">
+                            Duolingo | App, idiomas, antecedentes y viralidad
+                        </a>
+                    </li>
+
+                    <li class="referencias-duolingo">
+                        <a href="https://es.duolingo.com/" target="_blank" rel="noopener noreferrer">
+                            Duolingo- La forma más popular del mundo para aprender
+                        </a>
+                    </li>
+
+                    <li class="referencias-whatsapp">
+                        <a href="https://business.whatsapp.com/blog/quality-customer-care-messages?lang=es_LA"
+                            target="_blank" rel="noopener noreferrer">
+                            Cómo mejorar la experiencia del cliente con mensajes esperados, oportunos y relevantes
+                        </a>
+                    </li>
+
+                    <li class="referencias-whatsapp">
+                        <a href="https://www.parentesis.media/whatsapp-meta-experiencia-usuario-inteligencia-artificial/"
+                            target="_blank" rel="noopener noreferrer">
+                            WhatsApp revoluciona la experiencia de usuario con nuevas funciones de IA
+                        </a>
+                    </li>
+
+                    <li class="referencias-whatsapp">
+                        <a href="https://medium-com.translate.goog/design-bootcamp/whatsapp-redefining-communication-with-intuitive-ux-and-ui-11ab19132cf5?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc&_x_tr_hist=true"
+                            target="_blank" rel="noopener noreferrer">
+                            WhatsApp: Redefiniendo la comunicación con una experiencia de usuario (UX) y una interfaz de
+                            usuario (UI) intuitivas.
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+        <div class="referencias">
+            <h4><a class="referencias-github"
+                    href="https://github.com/SEBBAS-5pg/programacion-movil-2025-b-g1/tree/activity/13-week/01-session/Foro-C3/ejemplos"
+                    arget="_blank" rel="noopener noreferrer">GitHub enlace ejemplos.</a></h4>
+        </div>
+    </section>
+
+</body>
+
+</html>
