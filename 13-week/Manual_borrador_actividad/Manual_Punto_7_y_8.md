@@ -201,13 +201,13 @@ proyecto backend:
 
 ![](imagenes/Image1.png)
 
-![](imagenes/image2.png)
+![](imagenes/Image2.png)
 
 **CRUD implementado**
 
-![](imagenes/image3.png)
+![](imagenes/Image3.png)
 
-![](imagenes/image4.png)
+![](imagenes/Image4.png)
 
 **Descripción de las carpetas principales:**
 
@@ -241,16 +241,16 @@ implementación:
 
 **Estructura de carpetas del frontend con React (Ionic React)**
 
-![](imagenes/image5.png)
+![](imagenes/Image5.png)
 
 **Estructura de carpetas del frontend con Vue (Ionic Vue)**
 
-![](imagenes/image6.png)
-![](imagenes/image7.png)
+![](imagenes/Image6.png)
+![](imagenes/Image7.png)
 
 **Estructura de carpetas del frontend con Angular (Ionic Angular)**
 
-![](imagenes/image8.png)
+![](imagenes/Image8.png)
 
 **Descripción general de las carpetas comunes:**
 
@@ -348,10 +348,10 @@ Cada componente fue diseñado para ser **independiente**, pero a la vez
 la visibilidad y el flujo entre ellos.
 
 **Componentes de botones reutilizables en la interfaz (Ionic React)**\
-![](imagenes/image9.png)
+![](imagenes/Image9.png)
 
-![](imagenes/image10.png)
-![](imagenes/image11.png)
+![](imagenes/Image10.png)
+![](imagenes/Image11.png)
 
 ### **Ejemplo de código del componente (Ionic React)**
 
@@ -372,22 +372,22 @@ Su funcionamiento incluye:
 -   Notificaciones de éxito o error mediante IonToast.
 
 📄 **Fragmento de código del componente CreateForm:**\
-![](imagenes/image12.png)
+![](imagenes/Image12.png)
 
-![](imagenes/image13.png)
+![](imagenes/Image13.png)
 
-![](imagenes/image14.png)
+![](imagenes/Image14.png)
 
 📷 **Figura 6. Vista del formulario en ejecución (Crear Categoría /
 Crear Producto)**
 
-![](imagenes/image15.png)
+![](imagenes/Image15.png)
 
-![](imagenes/image16.png)
+![](imagenes/Image16.png)
 
-![](imagenes/image17.png)
+![](imagenes/Image17.png)
 
-![](imagenes/image18.png)
+![](imagenes/Image18.png)
 
 ### **Integración en las pantallas funcionales**
 
@@ -415,16 +415,16 @@ un diseño modular y reutilizable.
 📄 **Código 1. Ejemplo de integración en la pantalla de gestión de
 categorías**
 
-![](imagenes/image19.png)
+![](imagenes/Image19.png)
 
-![](imagenes/image10.png)
-![](imagenes/image20.png)
+![](imagenes/Image10.png)
+![](imagenes/Image20.png)
 
-![](imagenes/image21.png)
+![](imagenes/Image21.png)
 
-![](imagenes/image22.png)
+![](imagenes/Image22.png)
 
-![](imagenes/image23.png)
+![](imagenes/Image23.png)
 
 ### **Conexión entre Frontend y Backend**
 
@@ -438,11 +438,11 @@ centralizaron todas las funciones de conexión con el backend, separadas
 por entidad (categoriesService.ts y productsService.ts), además de un
 archivo base (api.ts) que configura la instancia principal de Axios.
 
-![](imagenes/image24.png)
+![](imagenes/Image24.png)
 
 📄 **Código 1. Configuración del cliente Axios**
 
-![](imagenes/image25.png)
+![](imagenes/Image25.png)
 
 A partir de esta configuración, cada entidad define sus propias
 funciones CRUD utilizando la misma instancia de Axios, lo que permite
@@ -450,11 +450,11 @@ mantener el código más limpio y coherente.
 
 📄 **Código 2. Ejemplo de servicios para Categorías**
 
-![](imagenes/image26.png)
+![](imagenes/Image26.png)
 
 📄 **Código 3. Ejemplo de servicios para Productos**
 
-![](imagenes/image27.png)
+![](imagenes/Image27.png)
 
 En el **backend**, para permitir que el frontend pueda comunicarse sin
 restricciones de origen, se utilizó la anotación \@CrossOrigin. Esta
@@ -463,7 +463,7 @@ frontend (4200 y 8100), evitando errores de tipo *CORS Policy*.
 
 📄 **Código 4. Configuración CORS en el controlador**
 
-![](imagenes/image28.png)
+![](imagenes/Image28.png)
 
 Gracias a esta configuración, la aplicación logra una conexión fluida
 entre ambas capas, garantizando que las operaciones de creación,
