@@ -1,6 +1,4 @@
-**Corporación Universitaria del Huila - Corhuila**
-
-**Manual punto 7 y 8**
+# Manual punto 7 y 8**
 
 **Presentado por:**
 
@@ -10,19 +8,6 @@ Jesus David Bernal Gonzáles, César David Quintero Ramírez y
 
 Danay Mariana Pereira Ospina
 
-**Presentado a:**
-
-Jesús Ariel Gonzales Bonilla
-
-**Facultad de Ingeniería**
-
-**V Semestre**
-
-**Programación Móvil**
-
-**Neiva - Huila**
-
-**2025**
 
 **Introducción**
 
