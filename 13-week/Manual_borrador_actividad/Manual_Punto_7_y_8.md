@@ -199,7 +199,7 @@ permite una mejor distribución de las responsabilidades del código.
 A continuación, se muestra la estructura general de carpetas del
 proyecto backend:
 
-![](imagenes/image1.png)
+![](imagenes/Image1.png)
 
 ![](imagenes/image2.png)
 
