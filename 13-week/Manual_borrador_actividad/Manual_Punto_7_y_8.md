@@ -1,4 +1,4 @@
-# Manual punto 7 y 8**
+# Manual punto 7 y 8
 
 **Presentado por:**
 
@@ -7,6 +7,8 @@ Sebastian Puentes Gonzalez, Daniela Sanabria Mosquera,
 Jesus David Bernal Gonzáles, César David Quintero Ramírez y
 
 Danay Mariana Pereira Ospina
+
+---
 
 
 **Introducción**
@@ -197,8 +199,7 @@ permite una mejor distribución de las responsabilidades del código.
 A continuación, se muestra la estructura general de carpetas del
 proyecto backend:
 
-![](imagenes/image1.png){width="4.863281933508311in"
-height="7.700492125984252in"}
+![](imagenes/image1.png)
 
 ![](imagenes/image2.png){width="6.1375in" height="3.933333333333333in"}
 
