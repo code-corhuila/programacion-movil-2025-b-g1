@@ -164,16 +164,11 @@ Con el fin de estandarizar el despliegue de los servicios y facilitar la
 comunicación entre el frontend y el backend, se definieron los
 siguientes puertos dentro de los contenedores Docker:
 
-  ------------------------------------------------------------------------
-  **Repositorio /      **Configuración   **Descripción**
-  Servicio**           Docker**          
-  -------------------- ----------------- ---------------------------------
-  **task-movil-app**   8080:9000         Puerto asignado al frontend
-                                         (aplicación móvil/web)
+| **Repositorio / Servicio** | **Configuración Docker** | **Descripción** |
+|-----------------------------|--------------------------|-----------------|
+| **task-movil-app**          | 8080:9000                | Puerto asignado al frontend (aplicación móvil/web) |
+| **task-movil-api**          | 80:(4200, 3000, 8080)    | Puertos asignados al backend según el entorno de desarrollo |
 
-  **task-movil-api**   80:(4200, 3000,   Puertos asignados al backend
-                       8080)             según el entorno de desarrollo
-  ------------------------------------------------------------------------
 
 De esta manera, la aplicación frontend se comunica con el backend a
 través del puerto **8080**, garantizando la interoperabilidad entre los
@@ -318,30 +313,14 @@ El uso de este enfoque promueve buenas prácticas de desarrollo como
 
 Los principales componentes desarrollados fueron:
 
-  -------------------------------------------------------------------------------
-  **Componente**          **Funcionalidad**   **Descripción**
-  ----------------------- ------------------- -----------------------------------
-  **CreateForm.tsx**      Crear               Permite registrar una nueva
-                                              categoría o producto, mostrando
-                                              formularios dinámicos según el
-                                              tipo.
+  | **Componente**       | **Funcionalidad** | **Descripción** |
+|-----------------------|-------------------|-----------------|
+| **CreateForm.tsx**    | Crear             | Permite registrar una nueva categoría o producto, mostrando formularios dinámicos según el tipo. |
+| **ListSection.tsx**   | Consultar         | Muestra todos los registros disponibles mediante una tabla o lista. |
+| **EditSection.tsx**   | Modificar         | Permite seleccionar y editar la información de un elemento existente. |
+| **DeleteSection.tsx** | Eliminar          | Facilita la eliminación de registros con confirmación visual. |
+| **CrudButtons.tsx**   | Contenedor        | Centraliza los botones de acción y muestra el componente correspondiente según la acción seleccionada. |
 
-  **ListSection.tsx**     Consultar           Muestra todos los registros
-                                              disponibles mediante una tabla o
-                                              lista.
-
-  **EditSection.tsx**     Modificar           Permite seleccionar y editar la
-                                              información de un elemento
-                                              existente.
-
-  **DeleteSection.tsx**   Eliminar            Facilita la eliminación de
-                                              registros con confirmación visual.
-
-  **CrudButtons.tsx**     Contenedor          Centraliza los botones de acción y
-                                              muestra el componente
-                                              correspondiente según la acción
-                                              seleccionada.
-  -------------------------------------------------------------------------------
 
 Cada componente fue diseñado para ser **independiente**, pero a la vez
 **compatible** con el contenedor principal CrudButtons, que administra
