@@ -36,9 +36,8 @@ const Home: React.FC = () => {
       </IonHeader>
 
       <IonContent
-        className={`ion-padding transition-bg ${
-          darkMode ? 'modo-oscuro' : 'modo-claro'
-        }`}
+        className={`ion-padding transition-bg ${darkMode ? 'modo-oscuro' : 'modo-claro'
+          }`}
       >
         <IonItem lines="none">
           <IonLabel>Modo oscuro</IonLabel>
