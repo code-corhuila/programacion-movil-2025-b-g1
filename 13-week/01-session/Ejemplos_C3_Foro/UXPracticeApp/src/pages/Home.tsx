@@ -53,10 +53,22 @@ const Home: React.FC = () => {
           </IonButton>
 
           {enviado && (
-            <IonText color="success">
-              <p>Tu acción fue completada exitosamente.</p>
-            </IonText>
+            <>
+              <IonText color="success">
+                <p>Tu acción fue completada exitosamente.</p>
+              </IonText>
+
+              <IonText color="medium">
+                <p>¿Qué tan fácil fue enviar tu mensaje?</p>
+                <IonButton size="small">⭐</IonButton>
+                <IonButton size="small">⭐⭐</IonButton>
+                <IonButton size="small">⭐⭐⭐</IonButton>
+                <IonButton size="small">⭐⭐⭐⭐</IonButton>
+                <IonButton size="small">⭐⭐⭐⭐⭐</IonButton>
+              </IonText>
+            </>
           )}
+
         </div>
       </IonContent>
     </IonPage>
