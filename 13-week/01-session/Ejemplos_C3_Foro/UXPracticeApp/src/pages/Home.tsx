@@ -10,7 +10,9 @@ import {
   IonItem,
   IonLabel,
   IonInput,
-  IonToggle
+  IonToggle,
+  IonToast,
+  IonAlert
 } from '@ionic/react';
 import './Home.css';
 
@@ -20,6 +22,8 @@ const Home: React.FC = () => {
   const [autenticado, setAutenticado] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const [error, setError] = useState('');
+  const [mostrarToast, setMostrarToast] = useState(false);
+  const [mostrarAlerta, setMostrarAlerta] = useState(false);
 
   const manejarModoOscuro = (checked: boolean) => {
     setDarkMode(checked);
@@ -27,15 +31,22 @@ const Home: React.FC = () => {
   };
 
   const manejarLogin = () => {
-    // Validación simple simulada
+    if (usuario.trim() === '' || clave.trim() === '') {
+      setError('Por favor, completa todos los campos.');
+      setMostrarAlerta(true);
+      return;
+    }
+
     if (usuario === 'admin' && clave === '1234') {
       setAutenticado(true);
       setError('');
+      setMostrarToast(true);
       setTimeout(() => setAutenticado(false), 3000);
     } else {
       setError('Credenciales incorrectas. Intenta de nuevo.');
+      setMostrarAlerta(true);
     }
-    // Buenas prácticas: limpiar campos después de intentar autenticación
+
     setClave('');
   };
 
@@ -43,7 +54,7 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar className="toolbar-azul">
-          <IonTitle>UXSecureApp</IonTitle>
+          <IonTitle>UXPracticeApp</IonTitle>
         </IonToolbar>
       </IonHeader>
 
@@ -55,6 +66,7 @@ const Home: React.FC = () => {
           <IonToggle
             checked={darkMode}
             onIonChange={(e) => manejarModoOscuro(e.detail.checked)}
+            aria-label="Cambiar modo oscuro"
           />
         </IonItem>
 
@@ -65,6 +77,8 @@ const Home: React.FC = () => {
               value={usuario}
               onIonChange={(e) => setUsuario(e.detail.value!)}
               type="text"
+              placeholder="Ingresa tu usuario"
+              aria-label="Campo de usuario"
               required
             />
           </IonItem>
@@ -75,6 +89,8 @@ const Home: React.FC = () => {
               value={clave}
               onIonChange={(e) => setClave(e.detail.value!)}
               type="password"
+              placeholder="Ingresa tu contraseña"
+              aria-label="Campo de contraseña"
               required
             />
           </IonItem>
@@ -88,18 +104,29 @@ const Home: React.FC = () => {
             {autenticado ? '🔐 Acceso concedido' : 'Iniciar sesión'}
           </IonButton>
 
-          {error && (
-            <IonText color="danger">
-              <p>{error}</p>
-            </IonText>
-          )}
-
           {autenticado && (
             <IonText color="success">
-              <p>Inicio de sesión exitoso. Bienvenido, {usuario}.</p>
+              <p>Bienvenido a UXPracticeApp, {usuario} 👋</p>
             </IonText>
           )}
         </div>
+
+        {/* Retroalimentación visual inmediata */}
+        <IonToast
+          isOpen={mostrarToast}
+          onDidDismiss={() => setMostrarToast(false)}
+          message="Inicio de sesión exitoso 🎉"
+          duration={2000}
+          color="success"
+        />
+
+        <IonAlert
+          isOpen={mostrarAlerta}
+          onDidDismiss={() => setMostrarAlerta(false)}
+          header="Atención"
+          message={error}
+          buttons={['OK']}
+        />
       </IonContent>
     </IonPage>
   );
