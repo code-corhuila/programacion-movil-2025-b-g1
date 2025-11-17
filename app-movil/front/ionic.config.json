@@ -1,7 +1,0 @@
-{
-  "name": "nazoru-app",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "vue-vite"
-}

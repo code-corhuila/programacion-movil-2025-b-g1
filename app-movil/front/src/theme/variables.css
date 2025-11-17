@@ -1,8 +1,0 @@
-/* For information on how to create your own theme, please see:
-http://ionicframework.com/docs/theming/ */
-
-/* Hacer el fondo de la app transparente para que se vea la vista nativa detrás */
-html, body, #app, ion-app {
-	background: transparent !important;
-}
-

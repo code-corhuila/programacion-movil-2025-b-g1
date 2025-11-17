@@ -1,4 +1,0 @@
-HACER INSTALACION DE DEPENCIAS NODE en back y front
-NPM INSTALL
-
-debido a que por el tamaño del archivo no me deja subir a github
