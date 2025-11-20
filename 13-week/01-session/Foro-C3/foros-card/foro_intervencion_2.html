@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Accesibilidad en Desarrollo Móvil</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primario: #99582a;
+            --color-secundario: #432818;
+            --color-acento: #bb9457;
+            --color-fondo-claro: #fcfcfc;
+            --color-fondo-tarjeta: #ffffff;
+            --color-fondo-seccion: #EDE0D4;
+            --color-texto: black;
+            --color-sombra: rgba(0, 0, 0, 0.1);
+            --color-borde-suave: #6f1d1b;
+            --color-git: #501DAF;
+
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--color-texto);
+            background-color: var(--color-fondo-claro);
+            padding: 20px;
+        }
+
+        .contenedor-guia {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: var(--color-fondo-tarjeta);
+            border-radius: 12px;
+            box-shadow: 0 8px 15px var(--color-sombra);
+            border-top: 5px solid var(--color-primario);
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--color-primario);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+            border-bottom: 3px solid var(--color-borde-suave);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--color-secundario);
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+            padding-left: 10px;
+            border-left: 5px solid var(--color-acento);
+        }
+
+        .introduccion {
+            background-color: var(--color-fondo-seccion);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .principios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .principio-card {
+            padding: 20px;
+            background-color: var(--color-fondo-tarjeta);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px var(--color-sombra);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--color-secundario);
+        }
+
+        .principio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px var(--color-sombra);
+        }
+
+        .principio-card h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--color-secundario);
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .principio-card strong {
+            color: var(--color-acento);
+        }
+
+        .estrategia-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            padding: 15px 20px;
+            background-color: var(--color-fondo-seccion);
+            border-radius: 8px;
+            border-left: 8px solid var(--color-primario);
+        }
+
+        .estrategia-item .icono {
+            font-size: 2em;
+            color: var(--color-acento);
+            margin-right: 15px;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .estrategia-item h4 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--color-primario);
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.15em;
+        }
+
+        .resumen {
+            margin-top: 40px;
+            padding: 25px;
+            background-color: var(--color-primario);
+            color: #ffffff;
+            border-radius: 8px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .bibliografia {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px dashed var(--color-borde-suave);
+        }
+
+        .bibliografia h2 {
+            border-left: 5px solid var(--color-acento);
+            color: var(--color-primario);
+        }
+
+        .bibliografia ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .bibliografia li {
+            margin-bottom: 10px;
+            padding-left: 15px;
+            position: relative;
+            font-size: 0.95em;
+        }
+
+        .bibliografia li::before {
+            content: "•";
+            color: var(--color-secundario);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .bibliografia a {
+            color: var(--color-secundario);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .bibliografia a:hover {
+            color: var(--color-fondo-seccion);
+            text-decoration: underline;
+        }
+
+        a.referencias-github:hover {
+            color: var(--color-git);
+            /* Usará el color amarillo/oro (#EDC531) */
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor-guia">
+        <h1>¿Cómo aplicarían principios de accesibilidad en un proyecto móvil?</h1>
+
+        <div class="introduccion">
+            <p>Para aplicar principios de accesibilidad en un proyecto móvil, se debe seguir un enfoque integral que
+                asegure que la app sea usable para personas con diversas discapacidades. Los principios fundamentales a
+                considerar incluyen:</p>
+        </div>
+
+        <h2>Principios Fundamentales (WCAG)</h2>
+
+        <div class="principios-grid">
+            <div class="principio-card">
+                <h3>Perceptibilidad</h3>
+                <p>La información y la interfaz deben ser presentadas de manera que todos los usuarios puedan
+                    percibirla.
+                    Esto implica usar tipografías sencillas, tamaños de fuente adecuadas, un buen espaciado, y opciones
+                    para hacer zoom. También es importante ofrecer configuraciones de contraste alto para facilitar la
+                    lectura, así como proporcionar <strong>texto alternativo</strong> para imágenes, que permita su
+                    interpretación con lectores de pantalla.</p>
+            </div>
+
+            <div class="principio-card">
+                <h3>Operabilidad</h3>
+                <p>La interfaz y la navegación deben ser accesibles para todo tipo de usuarios, incluyendo aquellos con
+                    discapacidades motoras. Se debe garantizar que todos los elementos interactivos sean operables
+                    mediante distintos métodos de entrada, como <strong>táctil, voz, gestos</strong>, o dispositivos
+                    externos. Además, la navegación debe ser clara y lógica, con etiquetas descriptivas y un flujo
+                    sencillo para evitar confusiones.</p>
+            </div>
+
+            <div class="principio-card">
+                <h3>Comprensibilidad</h3>
+                <p>El contenido y la interfaz deben ser fáciles de entender. Se recomienda usar textos claros,
+                    instrucciones precisas, y proveer <strong>subtítulos o transcripciones</strong> para contenido
+                    audiovisual para usuarios con discapacidades auditivas. Un lenguaje sencillo reduce la carga
+                    cognitiva.</p>
+            </div>
+
+            <div class="principio-card">
+                <h3>Robustez</h3>
+                <p>La app debe ser compatible con <strong>tecnologías asistivas</strong> como lectores de pantalla,
+                    teclados alternativos, controles por voz, entre otros. Esto asegura que todas las funciones sean
+                    accesibles y que la app cumpla con estándares internacionales como WCAG, garantizando la
+                    interoperabilidad.</p>
+            </div>
+        </div>
+
+        <h2>Estrategias Clave de Aplicación</h2>
+
+        <div class="estrategia-item">
+            <span class="icono">💡</span>
+            <div>
+                <h4>Inclusión desde el Diseño</h4>
+                <p>La accesibilidad debe integrarse desde las primeras etapas del desarrollo, con <strong>pruebas
+                        regulares</strong> con usuarios con diversas discapacidades para obtener retroalimentación
+                    directa. Adoptar un diseño inclusivo minimiza retrabajos futuros y mejora la experiencia para todos
+                    los usuarios.</p>
+            </div>
+        </div>
+
+        <div class="estrategia-item">
+            <span class="icono">🛠️</span>
+            <div>
+                <h4>Implementación Técnica</h4>
+                <p>Utilizar las herramientas y servicios del sistema operativo, como los <strong>widgets accesibles de
+                        Android o iOS</strong>, facilita la compatibilidad con tecnologías asistivas. Es fundamental
+                    etiquetar correctamente los elementos de la interfaz, añadir acciones específicas de accesibilidad y
+                    evitar depender exclusivamente del color para transmitir información.</p>
+            </div>
+        </div>
+
+        <div class="resumen">
+            <p>Mi principal conclusión es que la accesibilidad móvil es mucho más que un conjunto de reglas a cumplir;
+                es una filosofía fundamental de diseño. Para mí, la estructura de los principios WCAG (Perceptibilidad,
+                Operabilidad, Comprensibilidad y Robustez) confirma que debemos dejar de ver estas medidas como una
+                tarea opcional. Entiendo que la clave está en el Diseño Inclusivo: si no validamos con usuarios con
+                diversas capacidades desde las etapas iniciales, terminaremos con un producto que excluye.</p>
+        </div>
+
+        <div class="bibliografia">
+            <h2>Bibliografía</h2>
+            <ul>
+                <li>
+                    <a href="https://torresburriel.com/weblog/accesibilidad-en-aplicaciones-moviles/" target="_blank"
+                        rel="noopener noreferrer">
+                        Accesibilidad en aplicaciones móviles: normas y guías
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pasiona.com/mobile-accessibility-o-como-crear-aplicaciones-que-funcionen-para-todos-los-usuarios/"
+                        target="_blank" rel="noopener noreferrer">
+                        Mobile Accessibility o cómo crear aplicaciones que funcionen para todos los usuarios
+                    </a>
+                </li>
+                <li>
+                    <a href="https://appmaster.io/es/blog/diseno-de-accesibilidad-de-aplicaciones-moviles-para-la-inclusion"
+                        target="_blank" rel="noopener noreferrer">
+                        Accesibilidad de aplicaciones móviles: diseño para la inclusión
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="bibliografia">
+            <h4><a class="referencias-github"
+                    href="https://github.com/SEBBAS-5pg/programacion-movil-2025-b-g1/tree/activity/13-week/01-session/Foro-C3/ejemplos"
+                    arget="_blank" rel="noopener noreferrer">GitHub enlace ejemplos.</a></h4>
+        </div>
+    </div>
+
+</body>
+
+</html>

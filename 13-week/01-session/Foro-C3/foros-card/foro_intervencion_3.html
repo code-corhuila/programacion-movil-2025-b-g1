@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Visual vs Rendimiento Técnico</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --color-principal: #2C3E50;
+            --color-secundario: #3498DB;
+            --color-accent: #E74C3C;
+            --color-fondo-claro: #F8F9FA;
+            --color-texto: #333;
+            --color-texto-claro: #6C757D;
+            --color-borde: #E9ECEF;
+            --color-git: #501DAF;
+            --color-sombra: rgba(0, 0, 0, 0.05);
+            --color-sombra-intensa: rgba(0, 0, 0, 0.1);
+            --gradiente-principal: linear-gradient(135deg, #3498DB 0%, #2C3E50 100%);
+            --gradiente-secundario: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
+        }
+
+        /* Estilos Globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.7;
+            color: var(--color-texto);
+            background-color: var(--color-fondo-claro);
+            padding: 20px;
+        }
+
+        .contenedor-principal {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px var(--color-sombra-intensa);
+        }
+
+        /* Encabezado */
+        .encabezado {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .encabezado::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--gradiente-principal);
+            margin: 20px auto 0;
+            border-radius: 2px;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--color-principal);
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .subtitulo {
+            font-size: 1.1rem;
+            color: var(--color-texto-claro);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Secciones de contenido */
+        .seccion-contenido {
+            margin-bottom: 50px;
+        }
+
+        .seccion-titulo {
+            font-family: 'Poppins', sans-serif;
+            color: var(--color-principal);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .seccion-titulo::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 30px;
+            background: var(--gradiente-principal);
+            margin-right: 15px;
+            border-radius: 4px;
+        }
+
+        .contenido-texto {
+            margin-bottom: 25px;
+            padding-left: 23px;
+            position: relative;
+        }
+
+        .contenido-texto::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 8px;
+            height: 8px;
+            background-color: var(--color-secundario);
+            border-radius: 50%;
+        }
+
+        /* Sección de balance */
+        .seccion-balance {
+            background: var(--gradiente-principal);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+            box-shadow: 0 10px 20px var(--color-sombra-intensa);
+        }
+
+        .balance-titulo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .balance-contenido {
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Sección de resumen */
+        .seccion-resumen {
+            background-color: #F1F8FF;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 5px solid var(--color-secundario);
+            margin-top: 40px;
+        }
+
+        .resumen-titulo {
+            font-family: 'Poppins', sans-serif;
+            color: var(--color-principal);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        /* Referencias */
+        .referencias {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--color-borde);
+        }
+
+        .referencias h4 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--color-principal);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .referencias ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .referencias li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .referencias li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--color-secundario);
+            font-weight: bold;
+        }
+
+        .referencias a {
+            color: var(--color-principal);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        .referencias a:hover {
+            color: var(--color-secundario);
+            border-bottom: 1px solid var(--color-secundario);
+        }
+
+        .referecia-git a:hover {
+            color: var(--color-git);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .contenedor-principal {
+                padding: 25px;
+                margin: 20px auto;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .seccion-titulo {
+                font-size: 1.3rem;
+            }
+
+            .seccion-balance,
+            .seccion-resumen {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="contenedor-principal">
+        <header class="encabezado">
+            <h1>Diseño Visual vs Rendimiento Técnico</h1>
+            <p class="subtitulo">Encontrando el equilibrio perfecto desde la perspectiva del desarrollo</p>
+        </header>
+
+        <article>
+            <div class="seccion-contenido">
+                <h2 class="seccion-titulo">Importancia del Diseño Visual</h2>
+                <div class="contenido-texto">
+                    <p>El diseño visual atractivo es clave para captar la atención del usuario, mejorar la experiencia y
+                        comunicar la identidad de la marca. Un buen diseño facilita la navegación y aumenta la
+                        satisfacción del usuario, además de ayudar a diferenciarse en un mercado competitivo.</p>
+                </div>
+            </div>
+
+            <div class="seccion-contenido">
+                <h2 class="seccion-titulo">Prioridad del Rendimiento Técnico</h2>
+                <div class="contenido-texto">
+                    <p>Sin embargo, la prioridad para un desarrollador también incluye mantener un rendimiento técnico
+                        óptimo que asegure que la aplicación o sitio web funcione de manera rápida, eficiente y sin
+                        problemas, especialmente considerando la adaptabilidad a diferentes dispositivos y tamaños de
+                        pantalla (diseño responsive).</p>
+                </div>
+            </div>
+
+            <div class="seccion-contenido">
+                <h2 class="seccion-titulo">Riesgos del Exceso de Diseño</h2>
+                <div class="contenido-texto">
+                    <p>Un exceso de diseño visual puede afectar negativamente el rendimiento, causando lentitud o
+                        problemas técnicos que frustran al usuario y pueden llevarlo a abandonar la aplicación o sitio.
+                    </p>
+                </div>
+            </div>
+
+            <div class="seccion-balance">
+                <h3 class="balance-titulo">El Equilibrio Ideal</h3>
+                <p class="balance-contenido">El balance ideal es lograr un diseño visual atractivo y coherente que no
+                    comprometa el rendimiento técnico ni la usabilidad, priorizando siempre la experiencia del usuario y
+                    la eficiencia del sistema.</p>
+            </div>
+
+            <div class="seccion-resumen">
+                <h3 class="resumen-titulo">En Resumen</h3>
+                <p>Desde el punto de vista de un desarrollador, debe existir un equilibrio en el que el diseño visual
+                    soporte y mejore la funcionalidad y rendimiento, evitando que el atractivo visual sea un obstáculo
+                    para la rapidez, estabilidad y accesibilidad del producto digital.</p>
+            </div>
+        </article>
+
+        <footer class="referencias">
+            <h4>Bibliografía:</h4>
+            <ul>
+                <li>
+                    <a href="https://km32.com/crear-paginas-webs/importancia-diseno-visual-pagina-web-exitosa/" target="_blank"
+                        rel="noopener noreferrer">
+                        La IMPORTANCIA del DISEÑO VISUAL en tu WEB EXITOSA
+                    </a>
+                </li>
+                <li>
+                    <a href="https://arandasoft.com/blog/diez-preguntas-a-los-mas-grandes-programadores/" target="_blank" rel="noopener noreferrer">
+                        10 preguntas a los más grandes programadores
+                    </a>
+                </li>
+                <li>
+                    <a href="https://exodusproduction.com/importancia-diseno-visual-web/"
+                        target="_blank" rel="noopener noreferrer">
+                        La Importancia del diseño Visual en Tu Página Web
+                    </a>
+                </li>
+                <li>
+                    <a href="https://appmaster.io/es/blog/empieza-a-pensar-como-un-programador-mientras-aprendes-a-codificar"
+                        target="_blank" rel="noopener noreferrer">
+                        Empieza a pensar como un programador mientras aprendes a codificar
+                    </a>
+                </li>
+                <li>
+                    <a href="https://isil.pe/blog/tecnologia/diseno-web/"
+                        target="_blank" rel="noopener noreferrer">
+                        Diseño Web: qué es, importancia y características -ISIL PE
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <div class="referencias">
+            <h4 class="referecia-git">
+                <a class="referencias-github"
+                    href="https://github.com/SEBBAS-5pg/programacion-movil-2025-b-g1/tree/activity/13-week/01-session/Foro-C3/ejemplos"
+                    arget="_blank" rel="noopener noreferrer">GitHub enlace ejemplos.</a>
+            </h4>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+
+
+# ENLACE TABLERO TRELLO
+ - https://trello.com/invite/b/68b6e08c1f6b5bb5ce8ba600/ATTI31e006b9851a2fe2d9c8479b253da40624E94CF4/parcialparte2-backlogestacionamiento
+
+---
+
+# ENLACE APP UIZARD
+ - https://www.figma.com/make/Zf9qUlpBg3EuNCZq8QZjg1/App-Movil-Estacionamiento?node-id=0-1&t=mGBJPCzwRSerlMrV-1
+
+ # ENLACE DE VIDEO
+ - https://vt.tiktok.com/ZSAKqtSKo/
