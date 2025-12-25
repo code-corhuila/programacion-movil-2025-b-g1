@@ -1,0 +1,59 @@
+/* Estilo principal del botón */
+ion-button {
+    width: 100%;
+    --background: #39d353 !important;
+    --color: #ffffff !important;
+    --border-radius: 28px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 32px;
+    box-shadow: 0 4px 16px rgba(57, 211, 83, 0.15);
+    letter-spacing: 1px;
+    height: 56px;
+    text-transform: uppercase;
+}
+
+/* Elimina fondo oscuro en elementos internos */
+ion-button span,
+ion-button .button-inner,
+ion-button .button-native {
+    background: none !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Estilo de los inputs */
+.login-item {
+    background: #e0e0e0;
+    border-radius: 18px;
+    margin-bottom: 16px;
+    padding-left: 12px;
+}
+
+/* Elimina las líneas del input */
+.ion-input {
+    background: transparent;
+    color: #39d353;
+    font-size: 16px;
+    border: none;
+    box-shadow: none;
+}
+
+input,
+.sc-ion-input-md {
+    background: transparent !important;
+    color: #333 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Contenedor del formulario */
+.login-container {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,38 @@
+ion-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.transition-bg {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.modo-claro {
+  --background: #ffffff;
+  --color: #000000;
+  background-color: var(--background);
+  color: var(--color);
+}
+
+.modo-oscuro {
+  --background: #121212;
+  --color: #ffffff;
+  background-color: var(--background);
+  color: var(--color);
+}
+
+.toolbar-azul {
+  --background: #007bff !important; /* azul fijo */
+  --color: white !important;         /* texto blanco */
+  background-color: #007bff !important;
+  color: white !important;
+  text-align: center;
+  font-weight: bold;
+}
